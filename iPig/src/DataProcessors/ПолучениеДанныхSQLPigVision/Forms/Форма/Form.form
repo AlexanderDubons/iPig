@@ -3,6 +3,10 @@
   <items xsi:type="form:Button">
     <name>ЗапуститьОбмен</name>
     <id>19</id>
+    <title>
+      <key>ru</key>
+      <value>Запустить обмен с PigVision</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
