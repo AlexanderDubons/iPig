@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb96bccd-9004-4ed6-9714-3e502e4dc6d3">
+  <producedTypes>
+    <refType typeId="396b1dce-8a07-4cd8-ad82-c9275e6fd815" valueTypeId="ada7b451-dbcf-4f10-bb2d-3a600284ab01"/>
+    <listType typeId="2d1bf3ce-062f-4190-a913-c41c3e12e5cb" valueTypeId="38820961-0546-4b24-874e-d7b6fe4851bb"/>
+    <managerType typeId="e4626b97-a687-4c4b-9374-0bcd83335106" valueTypeId="1e728679-c68c-4b69-bf38-0ce9d278b892"/>
+  </producedTypes>
+  <name>ПоследнееСобытие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Последнее событие</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a00c0cfd-df67-41bf-96d1-172681c7d2dc">
+    <name>Случка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Случка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8c7a82e4-73c5-4df2-b6cf-86814a2832a4">
+    <name>УЗИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>УЗИ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a8207026-9aad-4410-a605-d798c2f9b40f">
+    <name>Опорос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Опорос</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="19c20812-506a-4fd8-8c1b-df067925dc95">
+    <name>Отъем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отъем</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0e2d3936-e796-4478-be3b-df1258994224">
+    <name>Ввод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c52d50bb-1a7b-4680-89a4-89bd5110db78">
+    <name>Выбытие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбытие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="926ded2b-a8f6-4e2f-a902-47543409d1bd">
+    <name>Аборт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аборт</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

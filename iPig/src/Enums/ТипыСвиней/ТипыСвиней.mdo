@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb1228da-f233-4396-8503-87c159e1cd6c">
+  <producedTypes>
+    <refType typeId="56c51bd9-c353-418c-a35e-4a47ac446c9e" valueTypeId="7489771a-9aa2-4e7d-8c5c-5dca46e26ded"/>
+    <listType typeId="d03b8a95-da48-4dbe-8a53-e05cea3757b4" valueTypeId="85e3c64b-5294-4c5c-a258-bc9c439d0dbb"/>
+    <managerType typeId="b3642dcb-4aed-4828-8165-8d9b6a23b4a0" valueTypeId="c9a51ca5-3724-4e05-8b64-10f452b4cf14"/>
+  </producedTypes>
+  <name>ТипыСвиней</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы свиней</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8e152150-de38-436d-ab66-52d5a3466256">
+    <name>Хряки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хряки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d78d2cae-eec2-4793-b2c1-82c3f90f14bc">
+    <name>Свинки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свинки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bf6ed691-ae51-4066-be17-881a24c8eb4b">
+    <name>СупоросныеСвиноматки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Супоросные свиноматки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1f3a05e0-b708-433a-b3c9-39085cb9eb46">
+    <name>ЛактирующиеСвиноматки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лактирующие свиноматки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8bd21195-e7aa-419d-8003-5fd28c3dcce2">
+    <name>ПустыеСвиноматки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Холостые свиноматки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7f85be4b-114f-4418-a88e-44e929db0c94">
+    <name>СвиноматкиНаЗабой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свиноматки на забой</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4d20103b-f69d-4ef9-a447-765a30a05fc6">
+    <name>РемСвинки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рем. свинки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9990bd24-0821-4f73-8edb-660d2bd28749">
+    <name>ПодсосныеПоросята</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсосные поросята</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5b213118-9d68-40b6-86d5-a8574411e68c">
+    <name>СвиньиМеньше50кг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свиньи &lt; 50 кг</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4bfacce2-3b6a-4ee9-865d-a08bc8b526eb">
+    <name>СвиньиБольше50кг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свиньи > 50 кг</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

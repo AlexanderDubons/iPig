@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e28156b-ad49-4cf1-9ec8-f669f24519d8">
+  <producedTypes>
+    <refType typeId="f1e607ca-be5f-4448-a587-3b1d83c7774b" valueTypeId="f293fa38-f14e-4d70-96f1-3fb182cdbdf8"/>
+    <listType typeId="32695e98-fb06-40d7-a181-8732ab3bf7fc" valueTypeId="456d19fc-d1b7-47fd-859b-875942129381"/>
+    <managerType typeId="fd8b6f74-16b3-4b41-9787-20fed6814175" valueTypeId="589d9265-3421-4976-8df8-0ba0e4e36584"/>
+  </producedTypes>
+  <name>ОценкаСлучки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценка случки</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e1d33cff-8ee7-4bf5-a1ea-fb02690c8b3d">
+    <name>Медленно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медленно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e0acc4f0-3ffc-458d-b3f3-357088dae113">
+    <name>Restless</name>
+    <synonym>
+      <key>ru</key>
+      <value>Restless</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="599983c1-fd89-4433-8de5-f0d46f424cbc">
+    <name>Backflow</name>
+    <synonym>
+      <key>ru</key>
+      <value>Backflow</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5d5a2865-47ba-47f9-ba39-45093c25a74d">
+    <name>Хорошо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хорошо</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

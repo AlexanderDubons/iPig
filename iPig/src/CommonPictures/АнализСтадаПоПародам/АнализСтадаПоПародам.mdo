@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f62a4bca-aee6-488b-b671-e21103a9ac54">
+  <name>АнализСтадаПоПародам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ стада по пародам</value>
+  </synonym>
+</mdclass:CommonPicture>

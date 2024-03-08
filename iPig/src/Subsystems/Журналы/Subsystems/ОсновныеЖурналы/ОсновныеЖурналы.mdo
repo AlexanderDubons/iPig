@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31e8de1c-2b95-40fb-a521-d81c453bc437">
+  <name>ОсновныеЖурналы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные журналы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ЖурналВыбраковки</content>
+  <content>InformationRegister.ЖурналОпороса</content>
+  <content>InformationRegister.ЖурналОсеменения</content>
+  <content>InformationRegister.ЖурналОтъема</content>
+  <content>InformationRegister.КарточкаВнесенияДанных</content>
+  <content>InformationRegister.КарточкаСвиноматки</content>
+  <content>InformationRegister.Супоросность</content>
+  <content>InformationRegister.Аборт</content>
+  <content>InformationRegister.КарточкаХряка</content>
+  <content>InformationRegister.ЖурналБрака</content>
+  <parentSubsystem>Subsystem.Журналы</parentSubsystem>
+</mdclass:Subsystem>

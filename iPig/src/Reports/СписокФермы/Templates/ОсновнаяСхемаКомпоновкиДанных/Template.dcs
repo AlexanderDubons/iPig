@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЖивотного</dataPath>
+			<field>НомерЖивотного</field>
+			<role>
+				<dcscom:ignoreNullValues>true</dcscom:ignoreNullValues>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЖивотногоОтец</dataPath>
+			<field>НомерЖивотногоОтец</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРождения</dataPath>
+			<field>ДатаРождения</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерОпороса</dataPath>
+			<field>НомерОпороса</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодПороды</dataPath>
+			<field>КодПороды</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаАбортаОпороса</dataPath>
+			<field>ДатаАбортаОпороса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>IDНомер</dataPath>
+			<field>IDНомер</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОтъема</dataPath>
+			<field>ДатаОтъема</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УшнойВыщип</dataPath>
+			<field>УшнойВыщип</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВыбытие</dataPath>
+			<field>ДатаВыбытие</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НазваниеПричины</dataPath>
+			<field>НазваниеПричины</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЖивотногоХряк</dataPath>
+			<field>НомерЖивотногоХряк</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодПородыХряк</dataPath>
+			<field>КодПородыХряк</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодПородыОпороса</dataPath>
+			<field>КодПородыОпороса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НазваниеПородыОпороса</dataPath>
+			<field>НазваниеПородыОпороса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пол</dataPath>
+			<field>Пол</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОсеменения</dataPath>
+			<field>ДатаОсеменения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата осеменения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Работник</dataPath>
+			<field>Работник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЖивотного</dataPath>
+			<field>ТипЖивотного</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РодителиОтец</dataPath>
+			<field>РодителиОтец</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РодителиМать</dataPath>
+			<field>РодителиМать</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>IDГнезда</dataPath>
+			<field>IDГнезда</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Мачеха</dataPath>
+			<field>Мачеха</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодПородыОпорос</dataPath>
+			<field>КодПородыОпорос</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НазваниеПородыОпорос</dataPath>
+			<field>НазваниеПородыОпорос</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодМеста</dataPath>
+			<field>КодМеста</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВвода</dataPath>
+			<field>ДатаВвода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерГнезда</dataPath>
+			<field>НомерГнезда</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОпоросов</dataPath>
+			<field>КоличествоОпоросов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество опоросов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЖивотногоМать</dataPath>
+			<field>НомерЖивотногоМать</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер животного мать</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРожденияМать</dataPath>
+			<field>ДатаРожденияМать</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРожденияОтец</dataPath>
+			<field>ДатаРожденияОтец</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЛевыхСосков</dataPath>
+			<field>ЛевыхСосков</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПравыхСосков</dataPath>
+			<field>ПравыхСосков</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пролечено</dataPath>
+			<field>Пролечено</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВакцинации</dataPath>
+			<field>ДатаВакцинации</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВЫБОР
+		КОГДА ЖурналОпоросаСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				И ЖурналОпоросаСрезПоследних.Период &lt; &amp;Дата
+			ТОГДА ЖурналОпоросаСрезПоследних.Период
+		ИНАЧЕ ВЫБОР
+				КОГДА АбортСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+						И АбортСрезПоследних.Период &lt; &amp;Дата
+					ТОГДА АбортСрезПоследних.Период
+			КОНЕЦ
+	КОНЕЦ КАК ДатаАбортаОпороса,
+	ЖурналОсемененияСрезПоследних.НомерОпороса КАК НомерОпороса,
+	ЖурналОсемененияСрезПоследних.Период КАК ДатаОсеменения,
+	ВЫБОР
+		КОГДА &amp;Дата &gt; ЖурналОсемененияСрезПоследних.Период
+				И &amp;Дата &lt; ДОБАВИТЬКДАТЕ(ЖурналОсемененияСрезПоследних.Период, ДЕНЬ, ПериодСупоросностиСвиноматки.Значение)
+			ТОГДА ЗНАЧЕНИЕ(Справочник.Статус.Супоросные)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;Дата &gt; ЖурналОпоросаСрезПоследних.Период
+						И &amp;Дата &lt; ДОБАВИТЬКДАТЕ(ЖурналОпоросаСрезПоследних.Период, ДЕНЬ, ПодсосныйПериодСвиноматки.Значение)
+					ТОГДА ЗНАЧЕНИЕ(Справочник.Статус.Лактирующие)
+				ИНАЧЕ ЗНАЧЕНИЕ(Справочник.Статус.Пустые)
+			КОНЕЦ
+	КОНЕЦ КАК Статус,
+	ВЫБОР
+		КОГДА ЖурналОтъемаСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				И ЖурналОтъемаСрезПоследних.Период &lt; &amp;Дата
+			ТОГДА ЖурналОтъемаСрезПоследних.Период
+	КОНЕЦ КАК ДатаОтъема,
+	ВЫБОР
+		КОГДА ЖурналОпоросаСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				И ЖурналОпоросаСрезПоследних.Период &lt; &amp;Дата
+			ТОГДА ЖурналОсемененияСрезПоследних.НомерОпороса
+		ИНАЧЕ ВЫБОР
+				КОГДА АбортСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+						И АбортСрезПоследних.Период &lt; &amp;Дата
+					ТОГДА ЖурналОсемененияСрезПоследних.НомерОпороса - 1
+				ИНАЧЕ ЖурналОсемененияСрезПоследних.НомерОпороса - 1
+			КОНЕЦ
+	КОНЕЦ КАК КоличествоОпоросов,
+	КарточкаСвиноматкиСрезПоследних.НомерЖивотного КАК НомерЖивотного
+ПОМЕСТИТЬ ВТСтатус
+ИЗ
+	РегистрСведений.ЖурналОсеменения.СрезПоследних КАК ЖурналОсемененияСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЖурналОпороса.СрезПоследних КАК ЖурналОпоросаСрезПоследних
+		ПО ЖурналОсемененияСрезПоследних.НомерЖивотного = ЖурналОпоросаСрезПоследних.НомерЖивотного
+			И ЖурналОсемененияСрезПоследних.НомерОпороса = ЖурналОпоросаСрезПоследних.НомерОпороса
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Аборт.СрезПоследних КАК АбортСрезПоследних
+		ПО ЖурналОсемененияСрезПоследних.НомерЖивотного = АбортСрезПоследних.НомерЖивотного
+			И ЖурналОсемененияСрезПоследних.НомерОпороса = АбортСрезПоследних.НомерОпороса
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЖурналОтъема.СрезПоследних КАК ЖурналОтъемаСрезПоследних
+		ПО ЖурналОсемененияСрезПоследних.НомерЖивотного = ЖурналОтъемаСрезПоследних.НомерЖивотного
+			И ЖурналОсемененияСрезПоследних.НомерОпороса = ЖурналОтъемаСрезПоследних.НомерОпороса
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КарточкаСвиноматки.СрезПоследних КАК КарточкаСвиноматкиСрезПоследних
+		ПО ЖурналОсемененияСрезПоследних.НомерЖивотного = КарточкаСвиноматкиСрезПоследних.НомерЖивотного
+			И ЖурналОсемененияСрезПоследних.НомерОпороса = КарточкаСвиноматкиСрезПоследних.НомерОпороса,
+	Константа.ПериодСупоросностиСвиноматки КАК ПериодСупоросностиСвиноматки,
+	Константа.ПодсосныйПериодСвиноматки КАК ПодсосныйПериодСвиноматки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	КарточкаВнесенияДанныхСрезПоследних.ДатаРождения КАК ДатаРождения,
+	КарточкаВнесенияДанныхСрезПоследних.КодПороды КАК КодПороды,
+	КарточкаВнесенияДанныхСрезПоследних.IDНомер КАК IDНомер,
+	КарточкаВнесенияДанныхСрезПоследних.РодителиОтец КАК НомерЖивотногоОтец,
+	КарточкаВнесенияДанныхСрезПоследних.РодителиМать КАК НомерЖивотногоМать,
+	КарточкаСвиноматкиСрезПоследних.НомерЖивотного КАК НомерЖивотного
+ПОМЕСТИТЬ ВременнаяТаблица
+ИЗ
+	РегистрСведений.КарточкаСвиноматки.СрезПоследних КАК КарточкаСвиноматкиСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КарточкаВнесенияДанных.СрезПоследних КАК КарточкаВнесенияДанныхСрезПоследних
+		ПО КарточкаСвиноматкиСрезПоследних.НомерЖивотного = КарточкаВнесенияДанныхСрезПоследних.НомерЖивотного
+ГДЕ
+	КарточкаВнесенияДанныхСрезПоследних.ДатаВыбытие = ДАТАВРЕМЯ(1, 1, 1)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТСтатус.ДатаАбортаОпороса КАК ДатаАбортаОпороса,
+	ВТСтатус.НомерОпороса КАК НомерОпороса,
+	ВТСтатус.ДатаОсеменения КАК ДатаОсеменения,
+	ВТСтатус.Статус КАК Статус,
+	ВТСтатус.ДатаОтъема КАК ДатаОтъема,
+	ВТСтатус.КоличествоОпоросов КАК КоличествоОпоросов,
+	ВременнаяТаблица.ДатаРождения КАК ДатаРождения,
+	ВременнаяТаблица.КодПороды КАК КодПороды,
+	ВременнаяТаблица.IDНомер КАК IDНомер,
+	ВременнаяТаблица.НомерЖивотного КАК НомерЖивотного,
+	ВременнаяТаблица.НомерЖивотногоОтец КАК НомерЖивотногоОтец,
+	ВременнаяТаблица.НомерЖивотногоМать КАК НомерЖивотногоМать
+ИЗ
+	ВТСтатус КАК ВТСтатус
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВременнаяТаблица КАК ВременнаяТаблица
+		ПО ВТСтатус.НомерЖивотного = ВременнаяТаблица.НомерЖивотного</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Дата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерЖивотного</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаРождения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порода</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КодПороды</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>IDНомер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отец</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НомерЖивотногоОтец</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мать</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НомерЖивотногоМать</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Последнее событие, статус</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Статус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НомерОпороса</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДатаОсеменения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДатаАбортаОпороса</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДатаОтъема</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоОпоросов</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Дата</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>a5cb71d3-85e9-499b-b5b6-552a82f9942f</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

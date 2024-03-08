@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c85c26b-1eb4-44e0-a407-ebaa1fea9061">
+  <producedTypes>
+    <managerType typeId="6254fa1c-7cef-4fca-b079-a0d7e35dac92" valueTypeId="b9a5df5c-65d5-4f26-b23a-d19408d9bfa2"/>
+    <valueManagerType typeId="31d03cc3-30dd-47ed-baa3-275c8a705def" valueTypeId="c1578490-0938-4b20-94c4-6ea5bc433227"/>
+    <valueKeyType typeId="040378c3-f506-48dc-b7fc-42accfefd9aa" valueTypeId="46ad1671-c320-4801-9c0f-8dac43ae256a"/>
+  </producedTypes>
+  <name>ДнейПослеАбортаБезПодсосныхСвиноматки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дней после аборта, без подсосных свиноматки</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>2</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

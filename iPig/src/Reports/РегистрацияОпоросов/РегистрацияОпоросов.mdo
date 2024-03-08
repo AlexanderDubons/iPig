@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a468513-b11c-4c2f-9e91-d260c258ba2a">
+  <producedTypes>
+    <objectType typeId="426b8853-d5ef-4295-8d40-e74002de7459" valueTypeId="7f3dc053-beee-4f0d-b2dc-825c91b65de7"/>
+    <managerType typeId="bc457faf-36b3-42de-a6a7-b1c2fc764430" valueTypeId="624743cd-b51e-4a6e-82f8-685e7f85ddff"/>
+  </producedTypes>
+  <name>РегистрацияОпоросов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрация опоросов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РегистрацияОпоросов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="8c8b068d-8c7c-4921-b8d7-bdacdcc70c49">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЖивотного</dataPath>
+			<field>НомерЖивотного</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КритическиеДниТекст</dataPath>
+			<field>КритическиеДниТекст</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Критические дни текст</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтрольныеДни</dataPath>
+			<field>КонтрольныеДни</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрольные дни</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	РегПоследнееСобытие.НомерЖивотного КАК НомерЖивотного,
+	РегПоследнееСобытие.ДатаПоследнегоСобытия КАК ДатаПоследнегоСобытия,
+	РегПоследнееСобытие.ПоследнееСобытие КАК ПоследнееСобытие
+ПОМЕСТИТЬ ВТДанные
+ИЗ
+	РегистрСведений.ПоследнееСобытие КАК РегПоследнееСобытие
+ГДЕ
+	РегПоследнееСобытие.ДатаПоследнегоСобытия &lt;= &amp;ДатаПоследнегоСобытия
+	И РегПоследнееСобытие.ПоследнееСобытие &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ПоследнееСобытие.Выбытие)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДниПослеВводаРемСвинки.Значение КАК Ввод,
+	ПериодСупоросностиСвиноматки.Значение КАК Случка,
+	ПодсосныйПериодСвиноматки.Значение КАК Опорос,
+	ДниПослеОтъемаСвиноматки.Значение КАК Отъем
+ПОМЕСТИТЬ ВТКонстанты
+ИЗ
+	Константа.ДниПослеВводаРемСвинки КАК ДниПослеВводаРемСвинки,
+	Константа.ПериодСупоросностиСвиноматки КАК ПериодСупоросностиСвиноматки,
+	Константа.ПодсосныйПериодСвиноматки КАК ПодсосныйПериодСвиноматки,
+	Константа.ДниПослеОтъемаСвиноматки КАК ДниПослеОтъемаСвиноматки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТДанные.НомерЖивотного КАК НомерЖивотного,
+	РАЗНОСТЬДАТ(НАЧАЛОПЕРИОДА(ВТДанные.ДатаПоследнегоСобытия, ДЕНЬ), НАЧАЛОПЕРИОДА(&amp;ДатаПоследнегоСобытия, ДЕНЬ), ДЕНЬ) КАК КонтрольныеДни,
+	ВТДанные.ПоследнееСобытие КАК КритическиеДниТекст
+ПОМЕСТИТЬ ВТРезультат
+ИЗ
+	ВТДанные КАК ВТДанные
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТРезультат.НомерЖивотного КАК НомерЖивотного,
+	ВТРезультат.КонтрольныеДни КАК КонтрольныеДни,
+	ВТРезультат.КритическиеДниТекст КАК КритическиеДниТекст
+ИЗ
+	ВТРезультат КАК ВТРезультат,
+	ВТКонстанты КАК ВТКонстанты
+ГДЕ
+	(ВТРезультат.КритическиеДниТекст = ЗНАЧЕНИЕ(Перечисление.ПоследнееСобытие.Случка)
+	И ВТРезультат.КонтрольныеДни &gt; ВТКонстанты.Случка)
+	ИЛИ (ВТРезультат.КритическиеДниТекст = ЗНАЧЕНИЕ(Перечисление.ПоследнееСобытие.Опорос)
+	И ВТРезультат.КонтрольныеДни &gt; ВТКонстанты.Опорос)   
+	ИЛИ (ВТРезультат.КритическиеДниТекст = ЗНАЧЕНИЕ(Перечисление.ПоследнееСобытие.Отъем)
+	И ВТРезультат.КонтрольныеДни &gt; ВТКонстанты.Отъем) 
+	ИЛИ (ВТРезультат.КритическиеДниТекст = ЗНАЧЕНИЕ(Перечисление.ПоследнееСобытие.Ввод)
+	И ВТРезультат.КонтрольныеДни &gt; ВТКонстанты.Ввод)
+
+
+ 
+	</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>КритическиеДниВвыод</dataPath>
+		<expression>  ВЫБОР 
+					   	КОГДА КритическиеДниТекст = Значение(Перечисление.ПоследнееСобытие.Случка) ТОГДА  "Супоросный период"
+					   	ИНАЧЕ   ВЫБОР 
+					   	КОГДА КритическиеДниТекст = Значение(Перечисление.ПоследнееСобытие.Опорос) ТОГДА  "Подсосный период"
+					   	ИНАЧЕ   ВЫБОР 
+					   	КОГДА КритическиеДниТекст = Значение(Перечисление.ПоследнееСобытие.Ввод) ТОГДА  "Дней после ввода"
+					   	ИНАЧЕ   ВЫБОР 
+					   	КОГДА КритическиеДниТекст = Значение(Перечисление.ПоследнееСобытие.Отъем) ТОГДА  "Дней после отъема"
+					   	
+					   КОНЕЦ
+					   КОНЕЦ
+					   КОНЕЦ
+					   КОНЕЦ	</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Критические дни ввыод</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>ДатаПоследнегоСобытия</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ввод даты</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерЖивотного</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КритическиеДниВвыод</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Критические дни, текст</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонтрольныеДни</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">КритическиеДниТекст</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>f8338756-cf9d-4113-aa5c-1e1775bd0bee</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаПоследнегоСобытия</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>59b58612-5472-47ca-9a13-1cf359af30ad</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>КонтрольныеДни</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

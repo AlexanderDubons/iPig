@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7486d93-8851-454d-bc23-bd48c29942b2">
+  <producedTypes>
+    <managerType typeId="51a80be6-3fc8-4233-9e8f-6e4b6a967d3b" valueTypeId="e4038c00-a5b4-4881-a2e3-9525153ce1f5"/>
+    <valueManagerType typeId="e82bd513-90f4-4e82-be7c-9683752ca021" valueTypeId="f2206a53-2852-4d93-8621-802b6dc70e87"/>
+    <valueKeyType typeId="61e17f5e-281f-4146-ad5c-50cf16816dd4" valueTypeId="c26e29ea-0b31-4067-bdba-792528d3c21f"/>
+  </producedTypes>
+  <name>ОтключитьКонтрольОшибок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отключить контроль ошибок</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

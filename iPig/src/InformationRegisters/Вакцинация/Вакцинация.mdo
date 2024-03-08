@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed20eada-4535-4604-ab95-f2268f7e6d29">
+  <producedTypes>
+    <selectionType typeId="eef6048f-4b79-45cc-8aaa-b441efd84d01" valueTypeId="0e5644e7-ce73-4d38-bab6-257de27414c6"/>
+    <listType typeId="c5bf6be5-4fa0-40fd-9d9e-a3de5a1d3c77" valueTypeId="d03435d7-51dd-42e0-9be8-ae9caedff8f2"/>
+    <managerType typeId="199b3179-c413-44f1-95c5-21df635a5ca6" valueTypeId="e5f404df-7cb2-494f-916e-4c0abb9c3eaf"/>
+    <recordSetType typeId="81b6472b-001e-4fdb-8164-23832f7dd6f9" valueTypeId="e4f2821b-75be-4b9d-bb0d-9df368af695d"/>
+    <recordKeyType typeId="306a2b21-4510-4e25-aee6-d789a0fd77d3" valueTypeId="9a409c0b-d3b1-45a7-a4f2-fbfd7df12219"/>
+    <recordType typeId="3855a0d4-de6b-4534-998d-6d3c209358e6" valueTypeId="9f19a5f9-e92e-42aa-9f7e-f965aa8bb086"/>
+    <recordManagerType typeId="75de7a64-4621-4bde-9081-9f3499c1668f" valueTypeId="0ad6563f-1eb3-469c-a842-885dac544526"/>
+  </producedTypes>
+  <name>Вакцинация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал вакцинации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.Вакцинация.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.Вакцинация.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="c4fd0d55-03dc-47e3-94d1-7414207441b3">
+    <name>НомерЖивотного</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер животного</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НомерЖивотного</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="95a23519-730c-42da-8d4f-2b18447f0017">
+    <name>Пролечено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пролечено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="43185359-719d-42f4-88a1-027488fa1393">
+    <name>ДатаВвода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ввода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="40675a08-9a80-46ac-b38b-0524f6f4ea24">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="77274c0a-17c2-4c84-aa66-2e7568d8dd8f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

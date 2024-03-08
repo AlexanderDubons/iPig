@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a457ee7-8a5b-485a-ac8d-cd75a379e0c8">
+  <producedTypes>
+    <objectType typeId="cf279872-3aa1-4af9-845c-53f52b61fd03" valueTypeId="068e1091-d14d-4781-9e07-f9aa71a78f86"/>
+    <managerType typeId="9ae1220e-70eb-491b-9571-02594ebede0d" valueTypeId="67455d3f-4500-4629-8a01-a98a9ab65226"/>
+  </producedTypes>
+  <name>ОписьХряков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Опись хряков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОписьХряков.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="12127d7b-af49-45d9-a93d-50d18482388c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

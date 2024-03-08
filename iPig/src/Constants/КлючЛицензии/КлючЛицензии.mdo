@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5eafb580-0e73-4309-84f6-dff98e1271e4">
+  <producedTypes>
+    <managerType typeId="4bd60529-51e4-4798-b0a0-351ae11675db" valueTypeId="848f4b68-cdc2-41e0-85b4-e34f33fc4ceb"/>
+    <valueManagerType typeId="ddd272d5-5ccc-4669-ad01-5b599425b7f2" valueTypeId="9828aa10-bfac-45f2-a4a5-6fc45090e754"/>
+    <valueKeyType typeId="50830bf5-aa7c-4385-ac37-181a63f59f13" valueTypeId="669d85d5-ccc0-4216-8163-6c7cce4c71fb"/>
+  </producedTypes>
+  <name>КлючЛицензии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ключ лицензии</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

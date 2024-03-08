@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1e49ffd-a4ad-44bf-92ca-11db23ff0d7d">
+  <producedTypes>
+    <objectType typeId="a91e4af8-4a38-4968-94d8-db20690243e3" valueTypeId="9f858e6b-e409-4476-9561-9ab9f6f8ee2a"/>
+    <refType typeId="8cfc97d5-3159-43b2-a23c-049e6f41768f" valueTypeId="fef027ae-51b1-4a97-aa51-a0715cc39750"/>
+    <selectionType typeId="8acedcc7-336b-4b97-b814-6bdbdea09808" valueTypeId="542cd56e-e4bb-41f8-bdd2-56d3f8617829"/>
+    <listType typeId="30e75e00-c63e-45f2-8796-84f7708730d9" valueTypeId="b7f17d69-0ae5-48ee-bb31-3a38988d00f9"/>
+    <managerType typeId="23f66314-f441-4d99-80ac-4eddc41d1343" valueTypeId="ef871795-fe88-48db-b730-c49313abaa34"/>
+  </producedTypes>
+  <name>ЕдиницыИзмерения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Единицы измерения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЕдиницыИзмерения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЕдиницыИзмерения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f625c802-2a38-4c94-8cdb-24a1f7544f56">
+      <name>г</name>
+      <description>г</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="f431bb30-69ab-4b48-b32a-d10dcb565ef3">
+      <name>доза</name>
+      <description>доза</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="6161d6e6-3ebe-4f98-adad-7a535b00ffa4">
+      <name>мл</name>
+      <description>мл</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

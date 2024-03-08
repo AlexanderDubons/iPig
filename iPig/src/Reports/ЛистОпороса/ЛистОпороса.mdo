@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1024844f-0263-4b65-9b46-e7cfbd99efc1">
+  <producedTypes>
+    <objectType typeId="2278b574-a002-4372-89f7-b1d45dd32181" valueTypeId="5695221a-00b8-40f4-9945-3beb9ed83785"/>
+    <managerType typeId="839bbd33-3e59-4f35-8433-200a781fe9e7" valueTypeId="d4e663c3-c6e2-45e5-8bf5-d421cf1ab242"/>
+  </producedTypes>
+  <name>ЛистОпороса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лист опороса</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ЛистОпороса.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="649cbae7-fa02-464f-bcbd-7973edb2d229">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="1b58c07c-0f4a-414f-b91b-ced256ad8986">
+    <producedTypes>
+      <objectType typeId="076b1bd2-cc57-435b-af04-ca2bcfc79121" valueTypeId="a0453bcc-5b6e-4fca-85b9-f34b3e6f62c4"/>
+      <rowType typeId="0f170633-75b5-4418-bc45-d76762b5fb77" valueTypeId="5795ecad-fc4b-41a1-a461-a6d976083369"/>
+    </producedTypes>
+    <name>ТЧОпорос</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТЧОпорос</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="c1ee0112-ac31-4fff-8492-d658faa9fe14">
+      <name>НомерОпороса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер опороса</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="989e8abc-ae1c-4d54-8bd0-af859ec170d6">
+      <name>НомерЖивотного</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер животного</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НомерЖивотного</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f699e0d3-9a1f-4302-b33a-72e1addecca7">
+      <name>ДатаПредпологаемогоОпороса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата предп. опороса</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ec0b3df7-3647-4748-8e5b-0d3fe1d6faf1">
+      <name>ДатаОпороса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата опороса</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b1e2893f-66c6-44e3-8c96-7aaec5c81cbe">
+      <name>Живорожденные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Живорожденные</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e830e753-3ef1-4218-aaee-3494c40e0998">
+      <name>Мертвые</name>
+      <synonym>
+        <key>ru</key>
+        <value>Мертвые</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4906f47b-2d8f-417f-a468-79dd24f667a9">
+      <name>Слаборожденные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Слаборожденные</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5c4fe1ff-d339-40cd-b842-a58964504eec">
+      <name>Муммии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Муммии</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c2f96c6f-0a65-4f32-8428-986fb6f765ee">
+      <name>Свинки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свинки</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="a4843bba-fc7f-4f12-8fe3-a89ffaade6ff">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a61b6f78-b321-4e14-9a73-29d39520d2e3">
+    <name>ПредварительныйПросмотр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предварительный просмотр</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

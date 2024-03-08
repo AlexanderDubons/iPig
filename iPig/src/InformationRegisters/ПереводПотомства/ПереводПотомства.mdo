@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5215c47-9865-45da-9a22-5b65e9140029">
+  <producedTypes>
+    <selectionType typeId="c1865f11-2c57-4904-943a-c521edf06fb9" valueTypeId="c16c187e-01b6-41a4-bf99-8caeabb7755a"/>
+    <listType typeId="73e36908-7fba-4709-bbd4-13c3c607bccf" valueTypeId="132dd780-36aa-4f86-be77-3be46f33be39"/>
+    <managerType typeId="ae87f672-d0c1-433b-b0a5-4b2182edc11b" valueTypeId="1a8fc933-3c42-452d-8248-f301c2553764"/>
+    <recordSetType typeId="03b902b0-4a82-4ff8-9a6e-3e95f9d2c588" valueTypeId="4897cae6-938a-48c6-bc2d-c78b5000b32c"/>
+    <recordKeyType typeId="f6438042-0711-47d2-9a04-34f5abd9f661" valueTypeId="ee0a1f29-03d8-4247-941d-6bb19adcc3d3"/>
+    <recordType typeId="f8129c59-e95d-4f80-b888-cbc8529110e8" valueTypeId="33d12df7-72e9-4395-8ca5-a9254c0b5d55"/>
+    <recordManagerType typeId="70e06990-42c8-4dbd-a7e5-fc40aa18434a" valueTypeId="2093afdf-d6d1-42c7-aecd-5d1e68c08e04"/>
+  </producedTypes>
+  <name>ПереводПотомства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перевод потомства</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПереводПотомства.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПереводПотомства.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c839cb20-47e8-4941-b73e-e397b1563a84">
+    <name>КоличествоСвиней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кол свиней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8fdde427-0926-4372-ae89-9d5f252fb1e9">
+    <name>МассаВсего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Всего кг</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bd20cf30-0cd8-4b51-a2ff-e3abff89c9c8">
+    <name>СреднийВес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средний вес</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="66dc0cb5-f183-481c-aa67-7bde355e7179">
+    <name>КодИзМеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Место</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d9faae8c-47bb-4cdb-8b50-2a2bb2a63323">
+    <name>КодВМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Место</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8c8f3920-2a0f-4f21-9f61-b547e1b438a2">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e352b03c-f4dd-4484-bb37-4336c64bc49e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

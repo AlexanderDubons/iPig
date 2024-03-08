@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3be20bbf-dd1d-4103-bf8c-36b527a0cbc1">
+  <producedTypes>
+    <selectionType typeId="af138cf4-f04b-4c5e-ab2b-2276392b9b47" valueTypeId="771fdf34-ee9f-4506-b622-79eba58c6782"/>
+    <listType typeId="3e9ce052-37a9-4933-a06a-0e5582817270" valueTypeId="a5a02982-67df-4020-bca8-b82d75edee02"/>
+    <managerType typeId="6fe55a13-24bb-4a9f-9b8e-1143963511de" valueTypeId="8bd94752-4c89-4d6f-b0ff-e91d0ccbfff4"/>
+    <recordSetType typeId="fa86a5cb-7b68-4ab5-a744-3406abce0d1c" valueTypeId="696beb1d-b99f-44ae-a047-7b951cb18f26"/>
+    <recordKeyType typeId="5314f2e1-aa90-471e-bc91-525278b012ce" valueTypeId="3fd2be87-715e-4d50-8b08-d657a9ff31e9"/>
+    <recordType typeId="664a217c-a053-4724-9bac-c5259ee0adca" valueTypeId="f9e301d1-0429-4dd9-a650-b3222b81899f"/>
+    <recordManagerType typeId="10e047d9-33f6-4719-94fe-4a217eef5156" valueTypeId="83428416-6b70-451d-bc92-b23fa14e448d"/>
+  </producedTypes>
+  <name>ЖурналСменыНомераЖивотного</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал смены номера животного</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ЖурналСменыНомераЖивотного.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ЖурналСменыНомераЖивотного.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="60782a10-ea9d-40b6-8dae-e8138417a2e4">
+    <name>НомерЖивотногоСтарый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер животного старый</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НомерЖивотного</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5b9e3587-dffc-4f92-a2f0-6f9ca89525a4">
+    <name>НомерЖивотногоНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер животного новый</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НомерЖивотного</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1e5ef0f2-8835-45cf-9d2a-3f26ccbfa499">
+    <name>ДатаВвода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ввода</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="6d31f30c-73fc-416d-a4f6-96b2f498143c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="28a9f4b8-6504-4adf-9689-1c8b2af6b2c5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

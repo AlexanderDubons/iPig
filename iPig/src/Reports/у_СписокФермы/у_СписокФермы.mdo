@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de91aaae-091c-4c7a-b723-7ea418f69467">
+  <producedTypes>
+    <objectType typeId="1472bdcd-4532-446c-a5cb-fb13066b1f89" valueTypeId="7d1df6a8-d392-44d2-aed7-b166179ebdb8"/>
+    <managerType typeId="5fef9a25-5f91-47fc-9c80-e7d7ddedea24" valueTypeId="6347d47c-04d5-4c29-928f-8416e7368478"/>
+  </producedTypes>
+  <name>у_СписокФермы</name>
+  <synonym>
+    <key>ru</key>
+    <value>У список фермы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.у_СписокФермы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="67959c6b-8e1a-47d0-9ba3-9cabf2802d25">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

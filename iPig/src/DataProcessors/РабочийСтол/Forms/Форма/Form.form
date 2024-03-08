@@ -1,0 +1,1513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>Группа1</name>
+    <id>44</id>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаОбщие</name>
+      <id>27</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаКарточки</name>
+        <id>5</id>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаВвод</name>
+          <id>21</id>
+          <items xsi:type="form:Button">
+            <name>КнопкаКарточкаСвиноматки</name>
+            <id>3</id>
+            <title>
+              <key>ru</key>
+              <value>Карточка свиноматки</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаКарточкаСвиноматкиРасширеннаяПодсказка</name>
+              <id>4</id>
+              <title>
+                <key>ru</key>
+                <value>Карточка
+свиноматки</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.КарточкаСвиноматки.StandardCommand.OpenList</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.КарточкаСвиноматки</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаСписокФермы</name>
+            <id>17</id>
+            <title>
+              <key>ru</key>
+              <value>СписокФермы</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаСписокФермыРасширеннаяПодсказка</name>
+              <id>18</id>
+              <title>
+                <key>ru</key>
+                <value>Список фермы</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>Report.СписокФермы.StandardCommand.Open</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.СписокФермы</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>СписокФермыПоОпоросам</name>
+            <id>37</id>
+            <title>
+              <key>ru</key>
+              <value>СписокФермыПоОпоросам</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>СписокФермыПоОпоросамРасширеннаяПодсказка</name>
+              <id>38</id>
+              <title>
+                <key>ru</key>
+                <value>Список фермы 
+по опоросам</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>Report.СписокФермыПоОпоросам.StandardCommand.Open</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.СписокФермыПоОпоросам</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаАнализСтада</name>
+            <id>33</id>
+            <title>
+              <key>ru</key>
+              <value>Спискок Проверки</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаАнализСтадаРасширеннаяПодсказка</name>
+              <id>34</id>
+              <title>
+                <key>ru</key>
+                <value>Анализ
+Стада</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>Report.АнализСтада.StandardCommand.Open</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.АнализСтада</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа ввод</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа ввод</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаВводРасширеннаяПодсказка</name>
+            <id>22</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>AlwaysHorizontal</group>
+            <representation>WeakSeparation</representation>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаОсеменение</name>
+          <id>23</id>
+          <items xsi:type="form:Button">
+            <name>КнопкаВвод</name>
+            <id>1</id>
+            <title>
+              <key>ru</key>
+              <value>Ввод</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаВводРасширеннаяПодсказка</name>
+              <id>2</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.КарточкаВнесенияДанных.StandardCommand.OpenList</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Ввод</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаОсеменение</name>
+            <id>15</id>
+            <title>
+              <key>ru</key>
+              <value>Осеменение</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаОсеменениеРасширеннаяПодсказка</name>
+              <id>16</id>
+              <title>
+                <key>ru</key>
+                <value>Журнал
+Осеменения</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.ЖурналОсеменения.StandardCommand.OpenList</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Осеменение</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаСупоросность</name>
+            <id>13</id>
+            <title>
+              <key>ru</key>
+              <value>Супоросность</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаСупоросностьРасширеннаяПодсказка</name>
+              <id>14</id>
+              <title>
+                <key>ru</key>
+                <value>Журнал
+супоросности</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.Супоросность.StandardCommand.OpenList</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Супоросность</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаОпорос</name>
+            <id>19</id>
+            <title>
+              <key>ru</key>
+              <value>Опорос</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаОпоросРасширеннаяПодсказка</name>
+              <id>20</id>
+              <title>
+                <key>ru</key>
+                <value>Журнал
+опороса</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.ЖурналОпороса.StandardCommand.OpenList</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.КарточкаСвиноматки</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа осеменение</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа осеменение</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаОсеменениеРасширеннаяПодсказка</name>
+            <id>24</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>AlwaysHorizontal</group>
+            <representation>WeakSeparation</representation>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаВыбраковка</name>
+          <id>25</id>
+          <items xsi:type="form:Button">
+            <name>КнопкаОтъем</name>
+            <id>11</id>
+            <title>
+              <key>ru</key>
+              <value>Отъем</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаОтъемРасширеннаяПодсказка</name>
+              <id>12</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.ЖурналОтъема.StandardCommand.OpenList</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Отъем</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаВыбраковка</name>
+            <id>7</id>
+            <title>
+              <key>ru</key>
+              <value>Выбраковка</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаВыбраковкаРасширеннаяПодсказка</name>
+              <id>8</id>
+              <title>
+                <key>ru</key>
+                <value>Журнал
+выбраковки</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.ЖурналВыбраковки.StandardCommand.OpenList</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Выбраковка</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаАборт</name>
+            <id>9</id>
+            <title>
+              <key>ru</key>
+              <value>Аборт</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаАбортРасширеннаяПодсказка</name>
+              <id>10</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.Аборт.StandardCommand.OpenList</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Аборт</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаКарточкаСвиноматки1</name>
+            <id>54</id>
+            <title>
+              <key>ru</key>
+              <value>Карточка свиноматки</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаКарточкаСвиноматки1РасширеннаяПодсказка</name>
+              <id>55</id>
+              <title>
+                <key>ru</key>
+                <value>Журнал охот</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.ЖурналОхот.StandardCommand.OpenList</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.КарточкаСвиноматки</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа выбраковка</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа выбраковка</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаВыбраковкаРасширеннаяПодсказка</name>
+            <id>26</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>AlwaysHorizontal</group>
+            <representation>WeakSeparation</representation>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа карточки</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа карточки</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаКарточкиРасширеннаяПодсказка</name>
+          <id>6</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <representation>WeakSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаОтчеты</name>
+        <id>29</id>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаОтчеты1</name>
+          <id>46</id>
+          <items xsi:type="form:Button">
+            <name>КнопкаАнализСтадаПоПородам</name>
+            <id>62</id>
+            <title>
+              <key>ru</key>
+              <value>Спискок Проверки</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаАнализСтадаПоПородамРасширеннаяПодсказка</name>
+              <id>63</id>
+              <title>
+                <key>ru</key>
+                <value>Анализ
+стада по породам</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>Report.АнализСтадаПоПородам.StandardCommand.Open</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.АнализСтадаПоПародам</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КартаПлодовитости</name>
+            <id>35</id>
+            <title>
+              <key>ru</key>
+              <value>Карта плодовитости</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КартаПлодовитостиРасширеннаяПодсказка</name>
+              <id>36</id>
+              <title>
+                <key>ru</key>
+                <value>Карта 
+плодовитости</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>Report.КартаПлодовитости.StandardCommand.Open</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.КартаПлодовитости</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаСписокПроверки</name>
+            <id>31</id>
+            <title>
+              <key>ru</key>
+              <value>Спискок
+Проверки</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаСписокПроверкиРасширеннаяПодсказка</name>
+              <id>32</id>
+              <title>
+                <key>ru</key>
+                <value>Список
+Проверки</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>Report.СписокПроверки.StandardCommand.Open</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.СписокПроверки</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа отчеты1</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа отчеты1</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаОтчеты1РасширеннаяПодсказка</name>
+            <id>47</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <representation>WeakSeparation</representation>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаОтчеты2</name>
+          <id>48</id>
+          <items xsi:type="form:Button">
+            <name>ЧисленностьСвиней</name>
+            <id>39</id>
+            <title>
+              <key>ru</key>
+              <value>Численность свиней</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ЧисленностьСвинейРасширеннаяПодсказка</name>
+              <id>40</id>
+              <title>
+                <key>ru</key>
+                <value>Численность
+свиней</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>Report.ЧисленностьСвиней.StandardCommand.Open</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.ЧисленностьСвиней</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаСписокПроверки1</name>
+            <id>50</id>
+            <title>
+              <key>ru</key>
+              <value>Карточка группы</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаСписокПроверки1РасширеннаяПодсказка</name>
+              <id>51</id>
+              <title>
+                <key>ru</key>
+                <value>Карточка группы</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>DataProcessor.КарточкаГруппы.StandardCommand.Open</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.КарточкаГруппы</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <items xsi:type="form:Button">
+            <name>КнопкаБрак</name>
+            <id>64</id>
+            <title>
+              <key>ru</key>
+              <value>Брак</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>КнопкаБракРасширеннаяПодсказка</name>
+              <id>65</id>
+              <title>
+                <key>ru</key>
+                <value>Брак</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorDef">
+                <red>105</red>
+                <green>138</green>
+                <blue>38</blue>
+              </textColor>
+              <font xsi:type="core:FontRef">
+                <font>Style.NormalTextFont</font>
+                <height>10.0</height>
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+              </font>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Center</horizontalAlign>
+                <titleHeight>2</titleHeight>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>InformationRegister.ЖурналБрака.StandardCommand.OpenList</commandName>
+            <representation>Picture</representation>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <height>4</height>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Выбраковка</picture>
+            </picture>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа отчеты2</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа отчеты2</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаОтчеты2РасширеннаяПодсказка</name>
+            <id>49</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <representation>WeakSeparation</representation>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа отчеты</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа отчеты</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаОтчетыРасширеннаяПодсказка</name>
+          <id>30</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <representation>WeakSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа общие</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа общие</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ГруппаОбщиеРасширеннаяПодсказка</name>
+        <id>28</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>AlwaysHorizontal</group>
+        <representation>WeakSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:Decoration">
+      <name>Декорация1</name>
+      <id>41</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>Декорация1РасширеннаяПодсказка</name>
+        <id>43</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>Декорация1КонтекстноеМеню</name>
+        <id>42</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <width>30</width>
+      <autoMaxWidth>true</autoMaxWidth>
+      <height>5</height>
+      <autoMaxHeight>true</autoMaxHeight>
+      <groupHorizontalAlign>Right</groupHorizontalAlign>
+      <groupVerticalAlign>Bottom</groupVerticalAlign>
+      <extInfo xsi:type="form:PictureDecorationExtInfo">
+        <picture xsi:type="core:PictureRef">
+          <picture>CommonPicture.iPigLogo</picture>
+        </picture>
+        <pictureSize>AutoSize</pictureSize>
+        <imageScale>50</imageScale>
+        <fileDragMode>AsFileRef</fileDragMode>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>Группа1РасширеннаяПодсказка</name>
+      <id>45</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>AlwaysHorizontal</group>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.РабочийСтол</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

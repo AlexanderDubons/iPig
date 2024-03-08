@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17461ccb-ba10-4d7a-9986-d3218de0125e">
+  <name>Справочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочники</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Справочники</picture>
+  </picture>
+  <content>Catalog.Работник</content>
+  <content>Catalog.ТипСвиней</content>
+  <content>Catalog.Причины</content>
+  <content>Catalog.Порода</content>
+  <content>Catalog.НомерЖивотного</content>
+  <content>Catalog.НомерГнезда</content>
+  <content>Document.КарточкаХрякаДок</content>
+  <content>Catalog.IDНомер</content>
+  <content>Catalog.IDГнезда</content>
+  <content>Catalog.КарточкаРодители</content>
+  <content>Catalog.Место</content>
+  <content>Catalog.Назначение</content>
+  <content>Catalog.КритическиеДни</content>
+  <content>Catalog.Статус</content>
+  <content>Report.ПозНегОтчет</content>
+  <content>Catalog.РезультатУЗИ</content>
+  <content>Catalog.Медикаменты</content>
+  <content>Catalog.Производители</content>
+  <content>Catalog.ЕдиницыИзмерения</content>
+  <content>Catalog.Диагноз</content>
+</mdclass:Subsystem>

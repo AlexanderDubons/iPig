@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8017d8cc-c205-45fe-84e4-a32fff990bf4">
+  <producedTypes>
+    <managerType typeId="054ef242-c926-41f3-a542-d8c0fa80a9c3" valueTypeId="3511beb5-d35b-4620-bfda-0745d18b0c08"/>
+    <valueManagerType typeId="4aa649a3-8791-47b5-94a7-11d065987577" valueTypeId="6a0f064c-3ac4-4c87-aa22-454adc48c889"/>
+    <valueKeyType typeId="51a2dcfa-7547-4ac2-a969-72be3f7c4eee" valueTypeId="ba459268-d0aa-4a97-987a-90bbfef0333f"/>
+  </producedTypes>
+  <name>ПутьКПоследнейКопии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь к последней копии</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

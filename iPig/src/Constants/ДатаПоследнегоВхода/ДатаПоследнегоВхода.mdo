@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="575d0151-fdea-4284-be2c-2860cd1bd71b">
+  <producedTypes>
+    <managerType typeId="4aa847e4-7730-48ea-b11d-3da3e77572af" valueTypeId="b8596042-a78f-4ca6-b4e2-6cbed67eada5"/>
+    <valueManagerType typeId="1d6cf159-a4f4-488f-85f7-10473a103d96" valueTypeId="06ba7361-19a3-4f03-b6c0-897a648dbe02"/>
+    <valueKeyType typeId="8d77d2bb-a660-446e-9b42-1cc8cb655196" valueTypeId="cf24e67f-6330-4b25-a329-66c5e9c13ee6"/>
+  </producedTypes>
+  <name>ДатаПоследнегоВхода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата последнего входа</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

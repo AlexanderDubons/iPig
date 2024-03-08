@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dffca1fe-bf1a-40a2-8082-5308cab64e04">
+  <producedTypes>
+    <objectType typeId="b8408264-6393-4fcb-b227-a249ff655afa" valueTypeId="d0c5fe9d-5202-4f6b-b3ad-bc47c195f610"/>
+    <managerType typeId="23fcd092-45eb-4fd5-aeb5-3b6e14369147" valueTypeId="f000287f-bd23-41e8-ab5d-b78bd744f868"/>
+  </producedTypes>
+  <name>ЧисленностьСвиней</name>
+  <synonym>
+    <key>ru</key>
+    <value>Численность свиней</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ЧисленностьСвиней.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="a0203977-e2fc-4d31-b0a5-c51961e53624">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="02168d07-2fb3-4b5b-8ef3-d6fb479754a7">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b8f03468-6e5f-4f75-b0fc-4eb27bb52d17">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

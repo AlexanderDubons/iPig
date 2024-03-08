@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28748a50-b7fb-4b98-9462-e27944e7031b">
+  <producedTypes>
+    <managerType typeId="45005fb6-ea56-4965-9fb5-4decb35502d4" valueTypeId="5755d8a8-93b4-4823-9eaa-b807ef23e389"/>
+    <valueManagerType typeId="7daf4c8c-2168-4a9f-aa88-6ca6c3d2b5ca" valueTypeId="48cfe77b-d34c-40d2-b96c-8660597281d3"/>
+    <valueKeyType typeId="9f1f882a-d991-4817-94f4-3c37c634f247" valueTypeId="b6bb02ff-2b0e-43c0-9341-983b3f9933bc"/>
+  </producedTypes>
+  <name>ПериодСупоросностиСвиноматки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Период супоросности свиноматки</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

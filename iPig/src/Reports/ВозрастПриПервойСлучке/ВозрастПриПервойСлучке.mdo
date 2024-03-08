@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4797018e-caaa-4fb8-bbb7-5566ffc611c0">
+  <producedTypes>
+    <objectType typeId="f9dbfa54-3103-4e5f-b795-5da4adefb9f1" valueTypeId="c04849c9-424c-4dca-8623-7f91b62d083b"/>
+    <managerType typeId="bc8c0df4-76f7-44f0-9e28-a710d11537c7" valueTypeId="ea458796-3b36-429f-9247-60d474c0e1d4"/>
+  </producedTypes>
+  <name>ВозрастПриПервойСлучке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возраст при первой случке</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ВозрастПриПервойСлучке.Form.ФормаОтчета</defaultForm>
+  <forms uuid="2c4f2f36-8b4e-44f0-b146-dbe9ee912479">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f2c1e0fe-7639-4e9d-a6ad-2bf7a69525ee">
+    <name>АнализСтада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ стада</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

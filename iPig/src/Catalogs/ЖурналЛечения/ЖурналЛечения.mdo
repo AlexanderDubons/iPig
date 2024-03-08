@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b2120b92-8fc2-4e9c-87ad-82955625e50c">
+  <producedTypes>
+    <objectType typeId="93905a26-de29-4541-92f6-7e96f70d0d8e" valueTypeId="13c503ea-1d81-4833-bd49-697271147b7e"/>
+    <refType typeId="b6529bcf-2409-4685-bb73-f343f36e16d4" valueTypeId="5d362768-05e8-4b38-ac55-add10570b7cd"/>
+    <selectionType typeId="2d3406dd-4d59-4aa6-a45a-fa5a6ea5f49a" valueTypeId="3ea8d059-20a8-4c56-82d7-08fc480bf80c"/>
+    <listType typeId="ea3fa45e-7e41-4aad-84fd-d626e2ff00fc" valueTypeId="b4f047f8-408d-4463-82ab-07a1b51f2b92"/>
+    <managerType typeId="e33821cc-bb47-451f-a70a-75705dcf507d" valueTypeId="fe336ff3-918e-49be-b0ed-0d38b31ca710"/>
+  </producedTypes>
+  <name>ЖурналЛечения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал лечения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЖурналЛечения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЖурналЛечения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЖурналЛечения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ЖурналЛечения.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="55536ea9-df3a-4e78-8c84-00607b35f912">
+    <name>Диагноз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диагноз</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Диагноз</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3ced62bd-c9ba-4023-8f76-d00801a6d9c0">
+    <name>Медикаменты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медикаменты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Медикаменты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7b2d5e56-d801-4ca2-a05e-735aad318ae3">
+    <name>Лечение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лечение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8e1015c9-571c-476e-a0d5-1f76a55832fa">
+    <name>Дозировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дозировка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a2ed4517-860d-4085-8bce-a10125038e54">
+    <name>ВесДозировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес дозировки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="631ef00c-5056-4240-99f1-6798e735b872">
+    <name>ВесСвиньи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес свиньи</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="97f27976-555c-4616-8406-3bc8eb4cf934">
+    <name>ДозаНаСвинью</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доза на свинью</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="67b88e5c-36d6-4fd2-8af5-b474643e501a">
+    <name>ДнейДоВыведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней до выведения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c824a3c8-b19e-4586-8632-031d8b225852">
+    <name>ПовторноеЛечение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повторное лечение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="94a31d13-979e-4d6f-851d-ee0cde9cc2eb">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a8a12bcf-154f-46bb-a12b-69fc6ee8a087">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

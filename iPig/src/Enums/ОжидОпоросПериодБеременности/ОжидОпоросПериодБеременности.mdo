@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58731f7d-d81b-4e3b-9b12-38a62ed62e75">
+  <producedTypes>
+    <refType typeId="c8da17fe-a447-49e5-81c0-a79c36dc6f68" valueTypeId="f02d4079-70df-4314-a6e5-27e2a47c807c"/>
+    <listType typeId="d281d29a-5826-4e15-a42a-ee71753c34aa" valueTypeId="4af6fd54-d139-4bd2-ac3c-8321519d51d1"/>
+    <managerType typeId="ec1898bd-c472-4782-b820-2dd1225ba507" valueTypeId="29f0fb67-ec33-4e21-bd35-1e77d62a7b76"/>
+  </producedTypes>
+  <name>ОжидОпоросПериодБеременности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ожид опорос период беременности</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2ccaf524-40b2-42e7-a8eb-0320d93975bc">
+    <name>Постоянный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Постоянный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="334f2243-db74-4275-b7d3-2846ae18ad30">
+    <name>Средний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средний</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

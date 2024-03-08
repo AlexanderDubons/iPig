@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8c72911-501a-457a-8e33-37bbd31d57ab">
+  <producedTypes>
+    <objectType typeId="84e7bae1-9d6f-4c49-9d3e-9824f1d562bf" valueTypeId="84150513-b66f-4395-b824-ae04cee285fe"/>
+    <managerType typeId="a2cde379-c8cd-4262-8b54-d3556d6018df" valueTypeId="1d1c35a4-15fb-4e18-aca1-46e598afcb06"/>
+  </producedTypes>
+  <name>ДвижениеКормов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движение кормов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДвижениеКормов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="719ff36d-233e-4ddc-b3b5-5fa28d74e750">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6ab47b51-db95-4c9e-8e3f-6e899ab92f89">
+  <producedTypes>
+    <objectType typeId="ac05e6c2-6687-4f99-92cd-f854071c432a" valueTypeId="b695ee83-27aa-4f4b-a967-2734e93f0ba4"/>
+    <managerType typeId="8a7ba04d-16db-4053-8b6e-fd2a7d8862e7" valueTypeId="69c10e90-25ab-4c35-b0b4-c39b1af7945f"/>
+  </producedTypes>
+  <name>АнализСтадаПоПородам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ стада по породам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АнализСтадаПоПородам.Form.ФормаОтчета</defaultForm>
+  <forms uuid="c1746be6-319f-4bdb-934b-3acd62780edc">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c9be440e-c4c3-42bc-b2b4-95a1cfcb6bb9">
+    <name>АнализСтада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ стада</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="488a2fff-e45d-48c5-af1d-93792d6f6b0b">
+  <producedTypes>
+    <objectType typeId="4a631fda-6fff-4b6c-9ba3-b6055eeb10e6" valueTypeId="1e507a91-2890-4651-88a0-cec10608f5fa"/>
+    <managerType typeId="57c94d33-cf5e-4c94-ad51-b4eec7c7f7cc" valueTypeId="7733d31d-4305-44ee-b86a-0a6140af483b"/>
+  </producedTypes>
+  <name>ОбновитьЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновить данные</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбновитьЗаписи.Form.Форма</defaultForm>
+  <forms uuid="bf5074fc-8ace-4681-b9d0-191049805469">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

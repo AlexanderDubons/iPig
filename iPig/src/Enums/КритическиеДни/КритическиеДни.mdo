@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f85139b-e4e7-4cc7-bba8-dd434c00a2a0">
+  <producedTypes>
+    <refType typeId="0fcbcccd-05ee-4b77-a2b0-f484ccf1fc9b" valueTypeId="b7b59316-c1de-40cd-b160-dba77c97d2fb"/>
+    <listType typeId="ebb659e1-7b83-45ff-a2b2-ba67f1418794" valueTypeId="d6304141-5c39-4247-a512-a6a68e562ae3"/>
+    <managerType typeId="1c6300fb-7781-4b37-aee2-18061ea3f3a1" valueTypeId="bb9e72c3-0a4f-45ec-94db-299d43b76a1a"/>
+  </producedTypes>
+  <name>КритическиеДни</name>
+  <synonym>
+    <key>ru</key>
+    <value>Критические дни</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3e83b8d7-28d5-435b-8333-06d8620028e3">
+    <name>ПериодСупоросности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период супоросности</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="26d5b2c6-84c6-46b2-a8c2-d248e79b0c55">
+    <name>ПодсосныйПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсосный период</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="633ae816-e65a-4a17-a517-c7b1ec6c0ded">
+    <name>ДнейПослеОтъма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней после отъма</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8a5182a9-25f3-4e27-8548-27976cb4de80">
+    <name>ДниПослеВвода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дни после ввода</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f1948758-54c8-42d8-bf89-c7a6b107c638">
+    <name>Кормилица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кормилица</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

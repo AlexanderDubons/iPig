@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b204dcf6-df4f-4d5b-9b6c-f4902b7fb648">
+  <producedTypes>
+    <managerType typeId="1679a924-3aec-4f6b-bcba-0b346d52276f" valueTypeId="ab2fb62f-b29f-4aa4-88b1-0b9784167136"/>
+    <valueManagerType typeId="80604da3-e37d-4686-8928-70c4c1a2da7f" valueTypeId="6f6840b9-b4ab-4538-ae0a-deeec8266e7e"/>
+    <valueKeyType typeId="31cab90a-c581-482d-b89c-2556097a9913" valueTypeId="e62f52bc-5151-4f52-ba34-fa628f39f4d2"/>
+  </producedTypes>
+  <name>УшнойВыщипИзНомераСвиноматки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ушной выщип из номера свиноматки</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

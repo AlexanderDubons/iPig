@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dec25d21-74f5-43a5-b757-0504b992a0a6">
+  <name>ЗаписьДанныхРегистраВЖурналРегистраций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись данных регистра в журнал регистраций</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule._НастройкиКонфигурацииНаСервере.ЗаписьДанныхРегистраВЖурналРегистрацийПриЗаписи</handler>
+</mdclass:EventSubscription>

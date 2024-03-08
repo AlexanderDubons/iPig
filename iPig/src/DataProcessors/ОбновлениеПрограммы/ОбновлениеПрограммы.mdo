@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3cc28995-146b-458b-85df-ffa6f51ed47f">
+  <producedTypes>
+    <objectType typeId="36481d08-b8dc-4326-8bac-6a0e1b0cea50" valueTypeId="040f64d0-49d6-4f7e-884f-520c47be7808"/>
+    <managerType typeId="538e5112-c2c6-4109-ab0f-22210c522c6c" valueTypeId="00199b99-27a1-4155-b27a-166934f226ff"/>
+  </producedTypes>
+  <name>ОбновлениеПрограммы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление программы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбновлениеПрограммы.Form.Форма</defaultForm>
+  <attributes uuid="ca04135d-06ea-4889-b553-c82cbaa6722a">
+    <name>ПутьСохранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь сохранения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3d9e993e-c25e-4796-b2a3-3f5d1cc3533f">
+    <name>КаталогОбновления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог обновления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="45b521ea-e2e9-46b0-8520-4db3dbab8d7e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83b281f3-0129-420d-b793-00625b32c0ce">
+  <producedTypes>
+    <refType typeId="493b1e24-edba-4059-ae54-47626cc70d48" valueTypeId="c92aa3e7-984e-4b4e-b66d-e1ba91946eac"/>
+    <listType typeId="6648bce2-faca-4915-a515-03b2e83f8ff9" valueTypeId="95868695-c13d-4d72-ae2f-367a023ba278"/>
+    <managerType typeId="99e60ae7-4b8e-4f78-94a8-56c2033b107b" valueTypeId="38d317c2-0840-4761-be95-727794808608"/>
+  </producedTypes>
+  <name>НомерОпороса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номер опороса</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="dfd4bd90-9486-4739-a982-1bfa58ef0626">
+    <name>Неосемененные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неосемененные</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3064c545-eaa7-4953-bf4e-412c850b93d1">
+    <name>Свинки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свинки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="15e92562-5d22-4b51-9151-83fc2eac3320">
+    <name>Опорос1</name>
+    <synonym>
+      <key>ru</key>
+      <value>1</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d65538f1-5bcd-4965-90d1-1d8bf3b13cce">
+    <name>Опорос2</name>
+    <synonym>
+      <key>ru</key>
+      <value>2</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="599001df-7815-48db-ba2c-f1a5c5cf7601">
+    <name>Опорос3</name>
+    <synonym>
+      <key>ru</key>
+      <value>3</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cb8b11ba-846b-4bb3-81c5-f6611d139726">
+    <name>Опорос4</name>
+    <synonym>
+      <key>ru</key>
+      <value>4</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f9b667de-afa7-4550-a359-0b4de056c8da">
+    <name>Опорос5</name>
+    <synonym>
+      <key>ru</key>
+      <value>5</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6495fc0f-db54-41bd-a649-ba678f0ca1fc">
+  <producedTypes>
+    <managerType typeId="b2d28d9c-7f68-4867-a742-b99b302c8044" valueTypeId="6a247c2c-d42d-40d0-85f4-36a8a7a13f71"/>
+    <valueManagerType typeId="caa48d37-2fd8-49c2-835c-81b28f6e8f5d" valueTypeId="14d3c1c1-248d-482c-85ac-c3a9a8a5f52d"/>
+    <valueKeyType typeId="788e0f4f-6607-4e93-90c5-82a52c602f13" valueTypeId="b31d7002-0d00-4add-b8d1-74c30332a2a1"/>
+  </producedTypes>
+  <name>СерийныйНомерСвинкиОт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Серийный номер свинки от</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

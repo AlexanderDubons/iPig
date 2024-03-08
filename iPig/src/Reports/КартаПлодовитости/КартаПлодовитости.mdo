@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f984766-5fcf-40b5-a822-295aaa4ba894">
+  <producedTypes>
+    <objectType typeId="b661e4a1-1260-4a3d-8ed2-c30d64c7d650" valueTypeId="5f930290-049e-4d80-87e7-bcffa5a7bfc1"/>
+    <managerType typeId="6f733c15-3c89-4697-98b2-3931e5a492be" valueTypeId="b8acbe41-79ae-49b8-b416-4b27b44d327c"/>
+  </producedTypes>
+  <name>КартаПлодовитости</name>
+  <synonym>
+    <key>ru</key>
+    <value>Карта плодовитости</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.КартаПлодовитости.Form.ФормаОтчета</defaultForm>
+  <variantsStorage>SettingsStorage.Основное</variantsStorage>
+  <settingsStorage>SettingsStorage.Основное</settingsStorage>
+  <attributes uuid="72c39f0d-eaf9-47fb-b99d-e75be60f0ad7">
+    <name>СДаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>С даты</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f85c351a-2624-43ed-a615-dd1899f547c3">
+    <name>ПоДату</name>
+    <synonym>
+      <key>ru</key>
+      <value>По дату</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="42576ec1-7ed2-4237-897a-464b2d629cf0">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="65d52f78-8198-485d-91d3-0abc24ed95ac">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c263d4f1-ff5e-4765-a2a9-8295a745a3c9">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

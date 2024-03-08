@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c11ff755-bc3b-4047-a0c8-cfc27ac82b7c">
+  <producedTypes>
+    <objectType typeId="14194ff0-d20b-40aa-8583-cf739fabb250" valueTypeId="ff9f6ad5-7324-4bf6-a94d-d93748c9ca64"/>
+    <managerType typeId="7160b5d5-d097-4057-aa2a-dbd7d9b1d04a" valueTypeId="bb4f6f80-53a6-44c1-943a-53b5f8d00007"/>
+  </producedTypes>
+  <name>ПолучениеДанныхSQLPigVision</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получение данных SQL Pig Vision</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПолучениеДанныхSQLPigVision.Form.Форма</defaultForm>
+  <forms uuid="e65f8b02-9f6c-4168-ab21-efcdbcfe4fd5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

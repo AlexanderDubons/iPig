@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84a09146-6301-4eb8-b7fd-ca508ae38a88">
+  <producedTypes>
+    <objectType typeId="b823115a-d46e-48cd-a2b4-b96a57cb4763" valueTypeId="7e16b0ee-0c98-4d40-a98e-9cd1997afcf1"/>
+    <managerType typeId="b50256e3-d395-4102-a48e-146f4c47ee62" valueTypeId="14de3de8-6ff7-4b38-9f5e-72551187e98b"/>
+  </producedTypes>
+  <name>КарточкаГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Карточка группы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КарточкаГруппы.Form.Форма</defaultForm>
+  <forms uuid="46c8ab90-1ed4-4b29-92c8-acca9b4adef4">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8939dc2c-87e1-4a4e-af3b-b3fa8902d3bf">
+    <name>КарточкаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка группы</value>
+    </synonym>
+  </templates>
+  <templates uuid="ad84a702-b3f2-4093-af44-7f636ee48189">
+    <name>КарточкаГруппыНов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка группы</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

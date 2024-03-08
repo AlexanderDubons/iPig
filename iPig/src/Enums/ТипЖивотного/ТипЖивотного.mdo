@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f80b247b-7b49-490e-95c3-7788ff8605b7">
+  <producedTypes>
+    <refType typeId="cee700a0-f32e-4bfb-a092-b1217fa5fef3" valueTypeId="0f9b4bc8-d677-4062-bf7a-50e07e80af76"/>
+    <listType typeId="48404101-3b27-4fa5-ab50-3b1f1ffa47af" valueTypeId="422440d1-88bc-4fa5-89e0-d6adf1f4f4a8"/>
+    <managerType typeId="63663f75-5f26-4229-97f3-71f39b85ba9e" valueTypeId="92c5479e-2238-45ff-9f9a-fe114ac4331b"/>
+  </producedTypes>
+  <name>ТипЖивотного</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип животного</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4ac526a7-1f63-4db0-bc54-0ec52badf271">
+    <name>ЖивотноеФермы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Животное фермы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="163dc272-8fdd-4221-a2a7-78580d085eef">
+    <name>ИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИО</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="acea1986-9d88-448e-8770-3fd7b98c83c7">
+    <name>ПлемЖивотное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плем. животное</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

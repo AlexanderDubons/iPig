@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d9fc71c-0b7c-46de-b6c3-743760732f46">
+  <producedTypes>
+    <managerType typeId="ef473cbb-c184-43ef-b91a-8c9686869e34" valueTypeId="7441b421-7335-44c2-8567-42171a82ffb0"/>
+    <valueManagerType typeId="77cbcb22-7674-4cd7-88e6-a6500e111607" valueTypeId="07430a90-d8d3-465f-b9ec-f7163b223891"/>
+    <valueKeyType typeId="daf9509f-0196-441d-9ff8-fde76199e739" valueTypeId="33ca8d52-ca71-40ba-9ee0-79c6bfae1605"/>
+  </producedTypes>
+  <name>ДниПослеОхотыБезСлучкиСвиноматки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дни после охоты без случки свиноматки</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>2</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

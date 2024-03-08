@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c730fd7c-73e2-4aab-95b3-d3df7b76529a">
+  <producedTypes>
+    <selectionType typeId="2189ebbe-7a6a-4fd0-bc31-0547446e8cb5" valueTypeId="4b510e7a-7a71-4f34-ad44-3980899a380e"/>
+    <listType typeId="cc4f9fba-9dba-49aa-b394-9aa927f7b7fc" valueTypeId="969ce8e4-254e-4c0c-8ef9-a7fad70f335b"/>
+    <managerType typeId="e0fe12a9-9d17-481f-b8b8-e2fa6bf69a2e" valueTypeId="5e3ea623-32a9-459c-862e-cd4878640129"/>
+    <recordSetType typeId="dc7b3fcc-d4b1-4515-a8b0-804444fb4fce" valueTypeId="c71266a8-301d-4346-9b08-4ad580fc5a97"/>
+    <recordKeyType typeId="46048513-ac58-4516-86f4-9d905018d79c" valueTypeId="559de0f8-a441-4013-a61c-56a7fce4c7f9"/>
+    <recordType typeId="f2ba4df3-09b7-4a39-b268-048016d9fa6b" valueTypeId="f2907155-1b39-4d8a-86f0-e16d2cb4d308"/>
+    <recordManagerType typeId="b288ae39-7799-4b45-9a94-a50b969521e2" valueTypeId="56c7fbb4-a794-4fed-9430-6da72538d569"/>
+  </producedTypes>
+  <name>ЖурналБрака</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал брака</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ЖурналБрака.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="f0d74daf-2777-4b32-80c1-09adb9984819">
+    <name>НомерЖивотного</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер животного</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НомерЖивотного</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ec9d01ea-8383-411a-b9ca-6055debb63cc">
+    <name>ДатаВвода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ввода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a0ec8f3f-9092-4aa8-a752-dcb51172bf48">
+    <name>Брак</name>
+    <synonym>
+      <key>ru</key>
+      <value>Брак</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9cb2c0e8-bedb-4f49-99aa-ef7d3c724d20">
+    <name>НомерОпороса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер опороса</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="964f5dd1-7e08-4d21-ba0d-973e5016052e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

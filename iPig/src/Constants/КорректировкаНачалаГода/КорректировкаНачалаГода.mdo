@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3092949-9f6e-495e-b49b-7f84aaf0a01f">
+  <producedTypes>
+    <managerType typeId="d3197f8c-227c-4de0-8ed3-105fcc46245f" valueTypeId="b22d1e4c-aec7-4ddd-b1a5-dc493aee788f"/>
+    <valueManagerType typeId="609242eb-8fa5-41bd-8fc5-7734ed74863d" valueTypeId="40d9dda4-9e26-4dc2-b607-f3ec3699511d"/>
+    <valueKeyType typeId="20e1d98a-58c0-47ab-b212-93e734b43afd" valueTypeId="8a2b5a94-893d-48d8-b465-448ea301724d"/>
+  </producedTypes>
+  <name>КорректировкаНачалаГода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка начала года</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>1</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

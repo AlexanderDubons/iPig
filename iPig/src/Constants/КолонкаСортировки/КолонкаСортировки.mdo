@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c5bbd14-2f11-4db8-810d-4408fe01b5da">
+  <producedTypes>
+    <managerType typeId="bcd95ce6-9e9b-4e85-8ec3-7ea27b71ac06" valueTypeId="ae182821-a6e4-4789-ae50-dfac030fe9c2"/>
+    <valueManagerType typeId="71f8ddcc-bf9d-4fb6-a44c-e3330501811f" valueTypeId="7f230714-12de-4094-8919-b297aa041931"/>
+    <valueKeyType typeId="b35c3173-e995-44ba-9889-ffc1d784b1ef" valueTypeId="e66bd26e-38fd-4345-8f61-675f46fbfe5d"/>
+  </producedTypes>
+  <name>КолонкаСортировки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Колонка сортировки</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>50</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

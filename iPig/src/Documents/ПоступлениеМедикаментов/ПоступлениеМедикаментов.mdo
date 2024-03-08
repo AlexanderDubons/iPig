@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c7e1128-7df7-44ac-a37c-1099ca8df22a">
+  <producedTypes>
+    <objectType typeId="cb515e4d-8618-4850-94bc-3a79daed2c6a" valueTypeId="d7142a8e-2489-419f-a8e5-b9e391c32b1e"/>
+    <refType typeId="3c8b0e38-a639-4db4-ab74-c8cf00d360ca" valueTypeId="0de965ba-9d8d-4f49-89a2-7347696bccdc"/>
+    <selectionType typeId="7f6054a2-1625-4d3f-855a-4bceed3c35e0" valueTypeId="41d9cb81-f501-4add-8f8f-4f08f53c06a2"/>
+    <listType typeId="c301ff3c-032a-495f-aac2-63d1908c387c" valueTypeId="0b5a5fee-1673-4b57-a950-efafab771b2c"/>
+    <managerType typeId="67ac7784-be39-4640-92cd-c6baadb56f1c" valueTypeId="2e854422-2e93-4adf-a2d5-c748ca68b5fb"/>
+  </producedTypes>
+  <name>ПоступлениеМедикаментов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поступление медикаментов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПоступлениеМедикаментов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПоступлениеМедикаментов.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.ДвижениеМедикаментов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="47fe0dc1-b8e5-422c-9e24-9694567b0b18">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="113302aa-d7ab-4d75-ac51-72806d26e71e">
+    <producedTypes>
+      <objectType typeId="e7934d4e-a9b4-47a2-bf1f-171e1766585e" valueTypeId="dc7d89c2-2fee-45ee-b941-31243c2da8d4"/>
+      <rowType typeId="c2c26484-74de-43fc-a5cc-696550d0f5b1" valueTypeId="aebaac35-f2e1-4635-bdc8-feba99fcbe2f"/>
+    </producedTypes>
+    <name>ТЧПоступление</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТЧПоступление</value>
+    </synonym>
+    <attributes uuid="d648162d-b78d-47df-999f-1e2d2816ae21">
+      <name>Медикаменты</name>
+      <synonym>
+        <key>ru</key>
+        <value>Медикаменты</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Медикаменты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fdfccd6e-4d92-4605-aa22-fdde905fa95b">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ceda22d9-8042-42c7-91f2-620ccd68f3e3">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9ff3f144-0fb9-4792-80cf-6f4efce7e200">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="46dd82aa-9502-4d18-b74f-3b44f0a308fe">
+      <name>СрокГодности</name>
+      <synonym>
+        <key>ru</key>
+        <value>Срок годности</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="43076f36-cc72-443e-b0c7-fcbc7dbd060a">
+      <name>РегистрационныйНомер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регистрационный номер</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="84c14588-e32f-4954-b192-de7298071394">
+      <name>СерияПоставки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Серия поставки</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

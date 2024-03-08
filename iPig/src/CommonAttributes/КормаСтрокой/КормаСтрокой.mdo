@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonAttribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ba153a1-ff2f-4ea5-be08-ed5369ed0c84">
+  <name>КормаСтрокой</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корма</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>1000</length>
+    </stringQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataHistory>Use</dataHistory>
+  <fillValue xsi:type="core:StringValue">
+    <value></value>
+  </fillValue>
+  <content>
+    <metadata>Document.ПоступлениеКормов</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Document.РасходКормов</metadata>
+    <use>Use</use>
+  </content>
+  <autoUse>DontUse</autoUse>
+  <dataSeparation>DontUse</dataSeparation>
+  <usersSeparation>DontUse</usersSeparation>
+  <authenticationSeparation>DontUse</authenticationSeparation>
+  <configurationExtensionsSeparation>DontUse</configurationExtensionsSeparation>
+  <fullTextSearch>Use</fullTextSearch>
+</mdclass:CommonAttribute>

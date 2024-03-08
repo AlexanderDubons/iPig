@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42e5bf67-12ff-42c6-817e-94ef5e83bc86">
+  <producedTypes>
+    <managerType typeId="14506785-124a-4caf-8a8a-12b75d62d4f0" valueTypeId="947d9ef2-5ee5-44f1-8bc6-6adaa23e981d"/>
+    <valueManagerType typeId="748bb8d1-4e6b-4da7-931f-7fece5e00805" valueTypeId="d97ef270-5d6c-43d5-925f-5af231027f49"/>
+    <valueKeyType typeId="62bb587c-e8fd-4828-9e0b-99703fd62194" valueTypeId="d9691081-88ea-4b40-8c9d-246b21ca7678"/>
+  </producedTypes>
+  <name>МаксимальноеКоличествоЖиворожденных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Максимальное количество живорожденных</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>2</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

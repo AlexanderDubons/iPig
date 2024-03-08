@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c54ff81a-d28c-40c7-980f-5adf0d4488d2">
+  <producedTypes>
+    <refType typeId="84c6505a-72ae-45d1-ab66-e254330d6068" valueTypeId="83bba6b6-ea49-455b-bffd-717d27aba5aa"/>
+    <listType typeId="20c788a9-76d7-482e-87e6-b49e976567e8" valueTypeId="c9dc5a7d-f7d9-475d-8cd0-b9818fea0c44"/>
+    <managerType typeId="73d1d8c1-70fd-4a4e-9fd4-c15bdf6ffba8" valueTypeId="eea4793a-b02f-43b4-9212-15dce8ffae84"/>
+  </producedTypes>
+  <name>ТипВыпадения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип выпадения</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1a958d40-0a8a-49c7-a003-ee639266c857">
+    <name>Выбраковка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбраковка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="47731ed7-9e72-4d89-a4f9-d92d4aa2a41a">
+    <name>Повторы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повторы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="66b155ac-e9d8-498e-b412-7ba069eae683">
+    <name>ТестСупоросности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тест супоросности</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0252a23a-be06-4526-8ca0-fcc61ec02a55">
+    <name>Аборт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аборт</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

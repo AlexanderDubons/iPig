@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormField">
+    <name>Код</name>
+    <id>1</id>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Code</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>КодРасширеннаяПодсказка</name>
+      <id>3</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>КодКонтекстноеМеню</name>
+      <id>2</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>Наименование</name>
+    <id>4</id>
+    <title>
+      <key>ru</key>
+      <value>Номер животного</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Description</segments>
+    </dataPath>
+    <titleLocation>Top</titleLocation>
+    <handlers>
+      <event>OnChange</event>
+      <name>НаименованиеПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>НаименованиеРасширеннаяПодсказка</name>
+      <id>6</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>НаименованиеКонтекстноеМеню</name>
+      <id>5</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ТипЖивотного</name>
+    <id>230</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <titleLocation>Top</titleLocation>
+    <extendedTooltip>
+      <name>ТипЖивотногоРасширеннаяПодсказка</name>
+      <id>232</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ТипЖивотногоКонтекстноеМеню</name>
+      <id>231</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <listChoiceMode>true</listChoiceMode>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Животное фремы</value>
+        </presentation>
+        <value xsi:type="core:NumberValue">
+          <value>0</value>
+        </value>
+      </choiceList>
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Родитель</value>
+        </presentation>
+        <value xsi:type="core:NumberValue">
+          <value>1</value>
+        </value>
+      </choiceList>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаСвиноматки</name>
+    <id>233</id>
+    <items xsi:type="form:Table">
+      <name>КарточкаСвиноматки</name>
+      <id>7</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>КарточкаСвиноматки</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <items xsi:type="form:FormField">
+        <name>КарточкаСвиноматкиПериод</name>
+        <id>20</id>
+        <title>
+          <key>ru</key>
+          <value>Дата ввода</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>КарточкаСвиноматки.Период</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиПериодРасширеннаяПодсказка</name>
+          <id>22</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиПериодКонтекстноеМеню</name>
+          <id>21</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>КарточкаСвиноматкиНомерЖивотного</name>
+        <id>23</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>КарточкаСвиноматки.НомерЖивотного</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиНомерЖивотногоРасширеннаяПодсказка</name>
+          <id>25</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиНомерЖивотногоКонтекстноеМеню</name>
+          <id>24</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>КарточкаСвиноматкиКодПороды</name>
+        <id>29</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>КарточкаСвиноматки.КодПороды</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиКодПородыРасширеннаяПодсказка</name>
+          <id>31</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиКодПородыКонтекстноеМеню</name>
+          <id>30</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>КарточкаСвиноматкиIDНомер</name>
+        <id>32</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>КарточкаСвиноматки.IDНомер</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиIDНомерРасширеннаяПодсказка</name>
+          <id>34</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиIDНомерКонтекстноеМеню</name>
+          <id>33</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>КарточкаСвиноматкиУшнойВыщип</name>
+        <id>35</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>КарточкаСвиноматки.УшнойВыщип</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиУшнойВыщипРасширеннаяПодсказка</name>
+          <id>37</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиУшнойВыщипКонтекстноеМеню</name>
+          <id>36</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>КарточкаСвиноматкиДатаВыбытие</name>
+        <id>218</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>КарточкаСвиноматки.ДатаВыбытие</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиДатаВыбытиеРасширеннаяПодсказка</name>
+          <id>220</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиДатаВыбытиеКонтекстноеМеню</name>
+          <id>219</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>КарточкаСвиноматкиТипВыбытие</name>
+        <id>221</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>КарточкаСвиноматки.ТипВыбытие</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиТипВыбытиеРасширеннаяПодсказка</name>
+          <id>223</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиТипВыбытиеКонтекстноеМеню</name>
+          <id>222</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>КарточкаСвиноматкиКодВыбытие</name>
+        <id>224</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>КарточкаСвиноматки.КодВыбытие</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиКодВыбытиеРасширеннаяПодсказка</name>
+          <id>226</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиКодВыбытиеКонтекстноеМеню</name>
+          <id>225</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>КарточкаСвиноматкиПричинаВыбытия</name>
+        <id>227</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>КарточкаСвиноматки.ПричинаВыбытия</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиПричинаВыбытияРасширеннаяПодсказка</name>
+          <id>229</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиПричинаВыбытияКонтекстноеМеню</name>
+          <id>228</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>LabelField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:LabelFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+        </extInfo>
+      </items>
+      <autoCommandBar>
+        <name>КарточкаСвиноматкиКоманднаяПанель</name>
+        <id>9</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <horizontalAlign>Left</horizontalAlign>
+      </autoCommandBar>
+      <searchStringAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>КарточкаСвиноматкиСтрокаПоиска</name>
+        <id>11</id>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиСтрокаПоискаРасширеннаяПодсказка</name>
+          <id>13</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиСтрокаПоискаКонтекстноеМеню</name>
+          <id>12</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <source>КарточкаСвиноматкиСтрокаПоиска</source>
+        <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </searchStringAddition>
+      <viewStatusAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>КарточкаСвиноматкиСостояниеПросмотра</name>
+        <id>14</id>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиСостояниеПросмотраРасширеннаяПодсказка</name>
+          <id>16</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиСостояниеПросмотраКонтекстноеМеню</name>
+          <id>15</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>ViewStatusAddition</type>
+        <source>КарточкаСвиноматкиСостояниеПросмотра</source>
+        <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </viewStatusAddition>
+      <searchControlAddition>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <name>КарточкаСвиноматкиУправлениеПоиском</name>
+        <id>17</id>
+        <extendedTooltip>
+          <name>КарточкаСвиноматкиУправлениеПоискомРасширеннаяПодсказка</name>
+          <id>19</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КарточкаСвиноматкиУправлениеПоискомКонтекстноеМеню</name>
+          <id>18</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>SearchControlAddition</type>
+        <source>КарточкаСвиноматкиУправлениеПоиском</source>
+        <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+        </extInfo>
+      </searchControlAddition>
+      <extendedTooltip>
+        <name>КарточкаСвиноматкиРасширеннаяПодсказка</name>
+        <id>10</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>КарточкаСвиноматкиКонтекстноеМеню</name>
+        <id>8</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <representation>HierarchicalList</representation>
+      <changeRowSet>true</changeRowSet>
+      <changeRowOrder>true</changeRowOrder>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <autoMaxRowsCount>true</autoMaxRowsCount>
+      <selectionMode>MultiRow</selectionMode>
+      <header>true</header>
+      <headerHeight>1</headerHeight>
+      <footerHeight>1</footerHeight>
+      <horizontalScrollBar>AutoUse</horizontalScrollBar>
+      <verticalScrollBar>AutoUse</verticalScrollBar>
+      <horizontalLines>true</horizontalLines>
+      <verticalLines>true</verticalLines>
+      <useAlternationRowColor>true</useAlternationRowColor>
+      <searchOnInput>Auto</searchOnInput>
+      <initialListView>Auto</initialListView>
+      <horizontalStretch>true</horizontalStretch>
+      <verticalStretch>true</verticalStretch>
+      <enableStartDrag>true</enableStartDrag>
+      <fileDragMode>AsFileRef</fileDragMode>
+      <rowPictureDataPath xsi:type="form:DataPath">
+        <segments>КарточкаСвиноматки.DefaultPicture</segments>
+      </rowPictureDataPath>
+      <extInfo xsi:type="form:DynamicListTableExtInfo">
+        <autoRefreshPeriod>60</autoRefreshPeriod>
+        <period>
+          <startDate>0001-01-01T00:00:00</startDate>
+          <endDate>0001-01-01T00:00:00</endDate>
+        </period>
+        <topLevelParent xsi:type="core:UndefinedValue"/>
+        <showRoot>true</showRoot>
+        <allowGettingCurrentRowURL>true</allowGettingCurrentRowURL>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Свиноматки</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа свиноматки</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>ГруппаСвиноматкиРасширеннаяПодсказка</name>
+      <id>234</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <behavior>Collapsible</behavior>
+      <collapsed>true</collapsed>
+      <representation>WeakSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <id>1</id>
+    <valueType>
+      <types>CatalogObject.НомерЖивотного</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>КарточкаСвиноматки</name>
+    <title>
+      <key>ru</key>
+      <value>Карточка свиноматки</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>DynamicList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:DynamicListExtInfo">
+      <queryText>ВЫБРАТЬ
+	РегистрСведенийКарточкаСвиноматки.Период КАК Период,
+	РегистрСведенийКарточкаСвиноматки.НомерЖивотного КАК НомерЖивотного,
+	РегистрСведенийКарточкаСвиноматки.ДатаРождения КАК ДатаРождения,
+	РегистрСведенийКарточкаСвиноматки.КодПороды КАК КодПороды,
+	РегистрСведенийКарточкаСвиноматки.IDНомер КАК IDНомер,
+	РегистрСведенийКарточкаСвиноматки.УшнойВыщип КАК УшнойВыщип,
+	РегистрСведенийКарточкаСвиноматки.ЛевыхСосков КАК ЛевыхСосков,
+	РегистрСведенийКарточкаСвиноматки.ПравыхСосков КАК ПравыхСосков,
+	РегистрСведенийКарточкаСвиноматки.НомерЖивотногоОтец КАК НомерЖивотногоОтец,
+	РегистрСведенийКарточкаСвиноматки.ДатаРожденияОтец КАК ДатаРожденияОтец,
+	РегистрСведенийКарточкаСвиноматки.НомерЖивотногоМать КАК НомерЖивотногоМать,
+	РегистрСведенийКарточкаСвиноматки.ДатаРожденияМать КАК ДатаРожденияМать,
+	РегистрСведенийКарточкаСвиноматки.Статус КАК Статус,
+	РегистрСведенийКарточкаСвиноматки.ДатаАбортаОпороса КАК ДатаАбортаОпороса,
+	РегистрСведенийКарточкаСвиноматки.Пролечено КАК Пролечено,
+	РегистрСведенийКарточкаСвиноматки.ДатаВакцинации КАК ДатаВакцинации,
+	РегистрСведенийКарточкаСвиноматки.НомерОпороса КАК НомерОпороса,
+	РегистрСведенийКарточкаСвиноматки.МассаВвод КАК МассаВвод,
+	РегистрСведенийКарточкаСвиноматки.Живорожденные КАК Живорожденные,
+	РегистрСведенийКарточкаСвиноматки.Мертвые КАК Мертвые,
+	РегистрСведенийКарточкаСвиноматки.Слаборожденные КАК Слаборожденные,
+	РегистрСведенийКарточкаСвиноматки.Муммии КАК Муммии,
+	РегистрСведенийКарточкаСвиноматки.Свинки КАК Свинки,
+	РегистрСведенийКарточкаСвиноматки.ПереведеноПоросят КАК ПереведеноПоросят,
+	РегистрСведенийКарточкаСвиноматки.Падеж КАК Падеж,
+	РегистрСведенийКарточкаСвиноматки.Перевод КАК Перевод,
+	РегистрСведенийКарточкаСвиноматки.КоличествоОтъемышей КАК КоличествоОтъемышей,
+	РегистрСведенийКарточкаСвиноматки.МассаВсего КАК МассаВсего,
+	РегистрСведенийКарточкаСвиноматки.СреднийВес КАК СреднийВес,
+	РегистрСведенийКарточкаСвиноматки.МассаВыбытие КАК МассаВыбытие,
+	РегистрСведенийКарточкаСвиноматки.Кормилица КАК Кормилица,
+	РегистрСведенийКарточкаСвиноматки.ВсегоПотеряноКормодней КАК ВсегоПотеряноКормодней,
+	РегистрСведенийКарточкаСвиноматки.ПадежПоросят КАК ПадежПоросят,
+	РегистрСведенийКарточкаСвиноматки.ДнейДо1Осеменения КАК ДнейДо1Осеменения,
+	РегистрСведенийКарточкаСвиноматки.КоличествоАбортов КАК КоличествоАбортов,
+	РегистрСведенийКарточкаСвиноматки.ЖиворожденныхВсего КАК ЖиворожденныхВсего,
+	РегистрСведенийКарточкаСвиноматки.ЖиворожденныхНаОпорос КАК ЖиворожденныхНаОпорос,
+	РегистрСведенийКарточкаСвиноматки.МертворожденныхНаОпорос КАК МертворожденныхНаОпорос,
+	РегистрСведенийКарточкаСвиноматки.ОтнятыхПоросят КАК ОтнятыхПоросят,
+	РегистрСведенийКарточкаСвиноматки.ОтнятоНаОпорос КАК ОтнятоНаОпорос,
+	РегистрСведенийКарточкаСвиноматки.ПадежДоОтъема КАК ПадежДоОтъема,
+	РегистрСведенийКарточкаСвиноматки.СупоросныхДнейНаОпорос КАК СупоросныхДнейНаОпорос,
+	РегистрСведенийКарточкаСвиноматки.ПодсосныхДнейНаОпорос КАК ПодсосныхДнейНаОпорос,
+	РегистрСведенийКарточкаСвиноматки.ПустыхДнейНаОпорос КАК ПустыхДнейНаОпорос,
+	РегистрСведенийКарточкаСвиноматки.ОпоросовНаСвиноматкуВГод КАК ОпоросовНаСвиноматкуВГод,
+	РегистрСведенийКарточкаСвиноматки.ПустыеКормодни КАК ПустыеКормодни,
+	РегистрСведенийКарточкаСвиноматки.ОтнятоПоросятНаСвиноматкуВГод КАК ОтнятоПоросятНаСвиноматкуВГод,
+	РегистрСведенийКарточкаСвиноматки.ЖиворожденныхНаСвиноматкуВГод КАК ЖиворожденныхНаСвиноматкуВГод,
+	РегистрСведенийКарточкаСвиноматки.ДатаОпороса КАК ДатаОпороса,
+	РегистрСведенийКарточкаСвиноматки.КодРаботника КАК КодРаботника,
+	РегистрСведенийКарточкаСвиноматки.Работник КАК Работник,
+	РегистрСведенийКарточкаСвиноматки.НомерЖивотногоХряк КАК НомерЖивотногоХряк,
+	РегистрСведенийКарточкаСвиноматки.НазваниеПородыХряк КАК НазваниеПородыХряк,
+	РегистрСведенийКарточкаСвиноматки.СтатусСлучка КАК СтатусСлучка,
+	РегистрСведенийКарточкаСвиноматки.НомерЖивотногоХрякОсеменен КАК НомерЖивотногоХрякОсеменен,
+	РегистрСведенийКарточкаСвиноматки.ДатаУЗИ КАК ДатаУЗИ,
+	РегистрСведенийКарточкаСвиноматки.РезультатУЗИ КАК РезультатУЗИ,
+	РегистрСведенийКарточкаСвиноматки.ДатаАборта КАК ДатаАборта,
+	РегистрСведенийКарточкаСвиноматки.МачехаАборт КАК МачехаАборт,
+	РегистрСведенийКарточкаСвиноматки.IDГнезда КАК IDГнезда,
+	РегистрСведенийКарточкаСвиноматки.ДатаОтъема КАК ДатаОтъема,
+	РегистрСведенийКарточкаСвиноматки.МачехаОтъем КАК МачехаОтъем,
+	РегистрСведенийКарточкаСвиноматки.ДнейДо1Случки КАК ДнейДо1Случки,
+	РегистрСведенийКарточкаСвиноматки.ПустыеДни КАК ПустыеДни,
+	РегистрСведенийКарточкаСвиноматки.ПериодЛактации КАК ПериодЛактации,
+	РегистрСведенийКарточкаСвиноматки.ПодсосныйПериод КАК ПодсосныйПериод,
+	РегистрСведенийКарточкаСвиноматки.ДатаВыбытие КАК ДатаВыбытие,
+	РегистрСведенийКарточкаСвиноматки.ТипВыбытие КАК ТипВыбытие,
+	РегистрСведенийКарточкаСвиноматки.КодВыбытие КАК КодВыбытие,
+	РегистрСведенийКарточкаСвиноматки.ПричинаВыбытия КАК ПричинаВыбытия,
+	РегистрСведенийКарточкаСвиноматки.ДатаСлучка КАК ДатаСлучка,
+	РегистрСведенийКарточкаСвиноматки.НазваниеПородыМать КАК НазваниеПородыМать,
+	РегистрСведенийКарточкаСвиноматки.НазваниеПородыОтец КАК НазваниеПородыОтец,
+	РегистрСведенийКарточкаСвиноматки.КодПородыХряк КАК КодПородыХряк
+ИЗ
+	РегистрСведений.КарточкаСвиноматки КАК РегистрСведенийКарточкаСвиноматки
+ГДЕ
+	РегистрСведенийКарточкаСвиноматки.НомерЖивотного = &amp;НомерЖивотного</queryText>
+      <mainTable>InformationRegister.КарточкаСвиноматки</mainTable>
+      <dynamicDataRead>true</dynamicDataRead>
+      <autoFillAvailableFields>true</autoFillAvailableFields>
+      <customQuery>true</customQuery>
+      <autoSaveUserSettings>true</autoSaveUserSettings>
+      <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+    </extInfo>
+  </attributes>
+  <commandInterface>
+    <navigationPanel>
+      <cmiFragmentRecord>
+        <command>InformationRegister.КарточкаСвиноматки.StandardCommand.OpenByValue.НомерЖивотного</command>
+        <group>FormNavigationPanelImportant</group>
+        <index>0</index>
+        <userVisible/>
+      </cmiFragmentRecord>
+    </navigationPanel>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:CatalogFormExtInfo">
+    <handlers>
+      <event>BeforeWrite</event>
+      <name>ПередЗаписью</name>
+    </handlers>
+  </extInfo>
+</form:Form>

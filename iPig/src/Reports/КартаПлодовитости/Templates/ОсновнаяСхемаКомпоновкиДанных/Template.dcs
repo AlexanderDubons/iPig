@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЖивотного</dataPath>
+			<field>НомерЖивотного</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаАбортаОпороса</dataPath>
+			<field>ДатаАбортаОпороса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРождения</dataPath>
+			<field>ДатаРождения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодПороды</dataPath>
+			<field>КодПороды</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЖивотногоОтец</dataPath>
+			<field>НомерЖивотногоОтец</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерОпороса</dataPath>
+			<field>НомерОпороса</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>IDГнезда</dataPath>
+			<field>IDГнезда</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерГнезда</dataPath>
+			<field>НомерГнезда</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодПородыОпорос</dataPath>
+			<field>КодПородыОпорос</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НазваниеПородыОпорос</dataPath>
+			<field>НазваниеПородыОпорос</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВвода</dataPath>
+			<field>ДатаВвода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОтъема</dataPath>
+			<field>ДатаОтъема</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодМеста</dataPath>
+			<field>КодМеста</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Работник</dataPath>
+			<field>Работник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Мачеха</dataPath>
+			<field>Мачеха</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВыбытие</dataPath>
+			<field>ДатаВыбытие</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НазваниеПричины</dataPath>
+			<field>НазваниеПричины</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЖивотногоХряк</dataPath>
+			<field>НомерЖивотногоХряк</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодПородыХряк</dataPath>
+			<field>КодПородыХряк</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодПородыОпороса</dataPath>
+			<field>КодПородыОпороса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НазваниеПородыОпороса</dataPath>
+			<field>НазваниеПородыОпороса</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Свинки</dataPath>
+			<field>Свинки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свинки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Свиноматки</dataPath>
+			<field>Свиноматки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свиноматки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Всего</dataPath>
+			<field>Всего</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Аборт</dataPath>
+			<field>Аборт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аборт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРожденияМать</dataPath>
+			<field>ДатаРожденияМать</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>IDНомер</dataPath>
+			<field>IDНомер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УшнойВыщип</dataPath>
+			<field>УшнойВыщип</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЛевыхСосков</dataPath>
+			<field>ЛевыхСосков</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПравыхСосков</dataPath>
+			<field>ПравыхСосков</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРожденияОтец</dataPath>
+			<field>ДатаРожденияОтец</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЖивотногоМать</dataPath>
+			<field>НомерЖивотногоМать</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пролечено</dataPath>
+			<field>Пролечено</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВакцинации</dataPath>
+			<field>ДатаВакцинации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Повторки</dataPath>
+			<field>Повторки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РезультатУЗИ</dataPath>
+			<field>РезультатУЗИ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пустые</dataPath>
+			<field>Пустые</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пустые</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Выбракованные</dataPath>
+			<field>Выбракованные</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбракованные</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОтъемышей</dataPath>
+			<field>КоличествоОтъемышей</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество отъемышей</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пусто</dataPath>
+			<field>Пусто</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пусто</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОжидаемыйОпорос</dataPath>
+			<field>ОжидаемыйОпорос</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ожидаемый опорос</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОпоросов</dataPath>
+			<field>КоличествоОпоросов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество опоросов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Мертвые</dataPath>
+			<field>Мертвые</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мертвые</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=1</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентОпоросов</dataPath>
+			<field>ПроцентОпоросов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент опоросов</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентСупоростных</dataPath>
+			<field>ПроцентСупоростных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент супоростных</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Все</dataPath>
+			<field>Все</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=1</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Живые</dataPath>
+			<field>Живые</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Живые</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=1</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднийВес</dataPath>
+			<field>СреднийВес</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний вес</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Неделя</dataPath>
+			<field>Неделя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Неделя</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерНедели</dataPath>
+			<field>НомерНедели</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер недели</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поле1</dataPath>
+			<field>Поле1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОценкаСлучки</dataPath>
+			<field>ОценкаСлучки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА ЖурналОсемененияСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				И ЖурналОсемененияСрезПоследних.НомерОпороса = 1
+			ТОГДА КОЛИЧЕСТВО(ЖурналОсемененияСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК Свинки,
+	ВЫБОР
+		КОГДА ЖурналОсемененияСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				И ЖурналОсемененияСрезПоследних.НомерОпороса &gt; 1
+			ТОГДА КОЛИЧЕСТВО(ЖурналОсемененияСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК Свиноматки,
+	ВЫБОР
+		КОГДА ЖурналОсемененияСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА КОЛИЧЕСТВО(ЖурналОсемененияСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК Всего,
+	ВЫБОР
+		КОГДА АбортСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА КОЛИЧЕСТВО(КарточкаСвиноматкиСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК Аборт,
+	ВЫБОР
+		КОГДА КОЛИЧЕСТВО(ЖурналОсемененияСрезПоследних.НомерОпороса) &gt;= 2
+			ТОГДА КОЛИЧЕСТВО(ЖурналОсемененияСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК Повторки,
+	ВЫБОР
+		КОГДА СупоросностьСрезПоследних.РезультатУЗИ = ЗНАЧЕНИЕ(Справочник.РезультатУЗИ.Негативный)
+			ТОГДА КОЛИЧЕСТВО(СупоросностьСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК Пустые,
+	ВЫБОР
+		КОГДА ЖурналОсемененияСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				И КарточкаСвиноматкиСрезПоследних.ДатаВыбытие &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА КОЛИЧЕСТВО(КарточкаСвиноматкиСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК Выбракованные,
+	NULL КАК ОжидаемыйОпорос,
+	NULL КАК Пусто,
+	ВЫБОР
+		КОГДА ЖурналОпоросаСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА КОЛИЧЕСТВО(ЖурналОпоросаСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК КоличествоОпоросов,
+	ВЫБОР
+		КОГДА ЖурналОпоросаСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА КОЛИЧЕСТВО(ЖурналОпоросаСрезПоследних.НомерОпороса) / (КОЛИЧЕСТВО(ЖурналОсемененияСрезПоследних.НомерОпороса) * 0.01)
+	КОНЕЦ КАК ПроцентОпоросов,
+	ВЫБОР
+		КОГДА СупоросностьСрезПоследних.РезультатУЗИ = ЗНАЧЕНИЕ(Справочник.РезультатУЗИ.Позитивный)
+			ТОГДА КОЛИЧЕСТВО(СупоросностьСрезПоследних.НомерЖивотного) * 100 / КОЛИЧЕСТВО(ЖурналОсемененияСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК ПроцентСупоростных,
+	ВЫБОР
+		КОГДА ЖурналОпоросаСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА СУММА(ЖурналОпоросаСрезПоследних.Живорожденные + ЖурналОпоросаСрезПоследних.Мертвые + ЖурналОпоросаСрезПоследних.Слаборожденные + ЖурналОпоросаСрезПоследних.Муммии) / КОЛИЧЕСТВО(ЖурналОпоросаСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК Все,
+	ВЫБОР
+		КОГДА ЖурналОпоросаСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА СУММА(ЖурналОпоросаСрезПоследних.Живорожденные) / КОЛИЧЕСТВО(ЖурналОпоросаСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК Живые,
+	ВЫБОР
+		КОГДА ЖурналОпоросаСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА СУММА(ЖурналОпоросаСрезПоследних.Мертвые) / КОЛИЧЕСТВО(ЖурналОпоросаСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК Мертвые,
+	ВЫБОР
+		КОГДА ЖурналОтъемаСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА СУММА(ЖурналОтъемаСрезПоследних.КоличествоОтъемышей) / КОЛИЧЕСТВО(ЖурналОтъемаСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК КоличествоОтъемышей,
+	ВЫБОР
+		КОГДА ЖурналОтъемаСрезПоследних.Период &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА СУММА(ЖурналОтъемаСрезПоследних.СреднийВес) / КОЛИЧЕСТВО(ЖурналОтъемаСрезПоследних.НомерЖивотного)
+	КОНЕЦ КАК СреднийВес,
+	НАЧАЛОПЕРИОДА(ЖурналОсемененияСрезПоследних.Период, НЕДЕЛЯ) КАК НомерНедели,
+	КОНЕЦПЕРИОДА(ДОБАВИТЬКДАТЕ(ЖурналОсемененияСрезПоследних.Период, ДЕНЬ, ПериодСупоросностиСвиноматки.Значение), НЕДЕЛЯ) КАК Неделя,
+	НАЧАЛОПЕРИОДА(ЖурналОсемененияСрезПоследних.Период, ДЕНЬ) КАК Поле1,
+	КарточкаСвиноматкиСрезПоследних.Период КАК Период,
+	КарточкаСвиноматкиСрезПоследних.НомерЖивотного КАК НомерЖивотного,
+	КарточкаСвиноматкиСрезПоследних.НомерОпороса КАК НомерОпороса
+ИЗ
+	РегистрСведений.КарточкаСвиноматки.СрезПоследних КАК КарточкаСвиноматкиСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЖурналОтъема.СрезПоследних(, ) КАК ЖурналОтъемаСрезПоследних
+		ПО КарточкаСвиноматкиСрезПоследних.НомерЖивотного = ЖурналОтъемаСрезПоследних.НомерЖивотного
+			И КарточкаСвиноматкиСрезПоследних.НомерОпороса = ЖурналОтъемаСрезПоследних.НомерОпороса
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЖурналОпороса.СрезПоследних(, ) КАК ЖурналОпоросаСрезПоследних
+		ПО КарточкаСвиноматкиСрезПоследних.НомерЖивотного = ЖурналОпоросаСрезПоследних.НомерЖивотного
+			И КарточкаСвиноматкиСрезПоследних.НомерОпороса = ЖурналОпоросаСрезПоследних.НомерОпороса
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Аборт.СрезПоследних(, ) КАК АбортСрезПоследних
+		ПО КарточкаСвиноматкиСрезПоследних.НомерЖивотного = АбортСрезПоследних.НомерЖивотного
+			И КарточкаСвиноматкиСрезПоследних.НомерОпороса = АбортСрезПоследних.НомерОпороса
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЖурналОсеменения.СрезПоследних(, ) КАК ЖурналОсемененияСрезПоследних
+		ПО КарточкаСвиноматкиСрезПоследних.НомерЖивотного = ЖурналОсемененияСрезПоследних.НомерЖивотного
+			И КарточкаСвиноматкиСрезПоследних.НомерОпороса = ЖурналОсемененияСрезПоследних.НомерОпороса
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Супоросность.СрезПоследних КАК СупоросностьСрезПоследних
+		ПО КарточкаСвиноматкиСрезПоследних.НомерЖивотного = СупоросностьСрезПоследних.НомерЖивотного
+			И КарточкаСвиноматкиСрезПоследних.НомерОпороса = СупоросностьСрезПоследних.НомерОпороса,
+	Константа.ПериодСупоросностиСвиноматки КАК ПериодСупоросностиСвиноматки
+ГДЕ
+	КарточкаСвиноматкиСрезПоследних.ДатаВыбытие = ДАТАВРЕМЯ(1, 1, 1)
+	И ЖурналОсемененияСрезПоследних.Период МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ДатаНачала, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ДатаОкончания, ДЕНЬ)
+
+СГРУППИРОВАТЬ ПО
+	КарточкаСвиноматкиСрезПоследних.Период,
+	КарточкаСвиноматкиСрезПоследних.НомерЖивотного,
+	КарточкаСвиноматкиСрезПоследних.НомерОпороса,
+	ЖурналОсемененияСрезПоследних.НомерОпороса,
+	АбортСрезПоследних.Период,
+	СупоросностьСрезПоследних.РезультатУЗИ,
+	КарточкаСвиноматкиСрезПоследних.ДатаВыбытие,
+	ЖурналОпоросаСрезПоследних.Период,
+	ЖурналОтъемаСрезПоследних.Период,
+	ЖурналОсемененияСрезПоследних.Период,
+	КОНЕЦПЕРИОДА(ДОБАВИТЬКДАТЕ(ЖурналОсемененияСрезПоследних.Период, ДЕНЬ, ПериодСупоросностиСвиноматки.Значение), НЕДЕЛЯ)</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Аборт</dataPath>
+		<expression>Сумма(Аборт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Все</dataPath>
+		<expression>Сумма(Все)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Всего</dataPath>
+		<expression>Сумма(Всего)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Выбракованные</dataPath>
+		<expression>Сумма(Выбракованные)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Живые</dataPath>
+		<expression>Сумма(Живые)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоОпоросов</dataPath>
+		<expression>Сумма(КоличествоОпоросов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоОтъемышей</dataPath>
+		<expression>Сумма(КоличествоОтъемышей)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Мертвые</dataPath>
+		<expression>Сумма(Мертвые)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Повторки</dataPath>
+		<expression>Сумма(Повторки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентОпоросов</dataPath>
+		<expression>Сумма(ПроцентОпоросов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентСупоростных</dataPath>
+		<expression>Сумма(ПроцентСупоростных)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Пустые</dataPath>
+		<expression>Сумма(Пустые)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Свинки</dataPath>
+		<expression>Сумма(Свинки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Свиноматки</dataPath>
+		<expression>Сумма(Свиноматки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднийВес</dataPath>
+		<expression>Сумма(СреднийВес)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОжидаемыйОпорос</dataPath>
+		<expression>Количество(ОжидаемыйОпорос)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Пусто</dataPath>
+		<expression>Количество(Пусто)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Свиноматки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Свинки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Всего</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Аборт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Повторки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Пустые</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Выбракованные</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОжидаемыйОпорос</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Пусто</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоОпоросов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентОпоросов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентСупоростных</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Все</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Живые</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Мертвые</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоОтъемышей</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СреднийВес</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаНачала</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>3d7ba717-de0d-4f04-8ecc-1bb871d5b06e</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаОкончания</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>41092029-da49-4bfa-9c7e-ee96e2a51d28</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:use>false</dcsset:use>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Свиноматки</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Свинки</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Всего</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Повторки</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ОжидаемыйОпорос</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>Аборт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>Повторки</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>Пусто</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>КоличествоОпоросов</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ПроцентОпоросов</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ПроцентСупоростных</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>Все</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>Живые</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>Мертвые</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>КоличествоОтъемышей</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>СреднийВес</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Неделя</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>Week</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="dcscor:Field">ПараметрыДанных.ДатаНачала</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+								<dcsset:use>false</dcsset:use>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Неделя</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Пустые</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Повторки</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Аборт</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Выбракованные</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Всего</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ОжидаемыйОпорос</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Аборт</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Повторки</dcsset:field>
+							</dcsset:item>
+							<dcsset:placement>Auto</dcsset:placement>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Пусто</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Опорос</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>КоличествоОпоросов</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ПроцентОпоросов</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ПроцентСупоростных</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Все</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Живые</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Мертвые</dcsset:field>
+							</dcsset:item>
+							<dcsset:placement>Auto</dcsset:placement>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отъем</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>КоличествоОтъемышей</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>СреднийВес</dcsset:field>
+							</dcsset:item>
+							<dcsset:placement>Auto</dcsset:placement>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НомерНедели.ЧастиДат.НеделяГода</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

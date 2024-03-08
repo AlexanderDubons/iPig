@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a9b2db4-3190-47d1-a1ab-f2fb6a1ebe98">
+  <producedTypes>
+    <objectType typeId="43941c47-fb79-4780-a9bf-f38435a3dd01" valueTypeId="5f7c89bc-cdad-4fd4-9186-cbd1a50d0b31"/>
+    <refType typeId="a86fbae0-0a10-4523-9fac-0d4b3432806a" valueTypeId="41193c18-ea28-4e28-b859-da50343b0dd1"/>
+    <selectionType typeId="8c9d68c5-a061-49bb-b533-cc21dd5eea5e" valueTypeId="5d08b996-bb73-44cb-ab89-949e80bc64f4"/>
+    <listType typeId="5ad2249c-535c-42dd-9a69-405549183bd9" valueTypeId="108ef8f5-9c12-4ee1-a0ea-5f95b92d351b"/>
+    <managerType typeId="ec491148-5ae7-425e-a48c-6fa4f3849325" valueTypeId="628ebcfc-022f-4fbd-a20c-7be80836b6a4"/>
+  </producedTypes>
+  <name>РасходКормов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расход кормов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.РасходКормов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.РасходКормов.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.РасходКормов.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.ДвижениеКормов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="4a0c17cb-e0c0-45d2-a5df-b817e9e79bb5">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8b94e7ad-9ce1-4da6-aaa4-b9e573cd7639">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="1dec5798-dab3-42c4-bc58-52b4d0e1f07c">
+    <producedTypes>
+      <objectType typeId="874a42d4-1333-4ec1-8131-b519c3c7f273" valueTypeId="3799e251-cde1-4474-ad28-1e9f26d7fc0d"/>
+      <rowType typeId="9de13f50-f7ba-41e4-ae93-fe402b959c8a" valueTypeId="e8c2e16e-f932-4399-9da4-30c06cfcdf85"/>
+    </producedTypes>
+    <name>ТЧКорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТЧКорма</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="a707a0cf-edd5-4e36-8efc-86187e9ffd3d">
+      <name>Корм</name>
+      <synonym>
+        <key>ru</key>
+        <value>Корм</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Корма</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f7478992-6edf-4b0a-b4fd-4126cff017d2">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

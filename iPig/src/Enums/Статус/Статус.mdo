@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="298e29f2-629e-4b4c-98f4-5092f0d6366f">
+  <producedTypes>
+    <refType typeId="ab74548a-39b4-46e3-89f3-45dd3c929e2b" valueTypeId="d982d408-e00d-4133-b443-e5166048aadb"/>
+    <listType typeId="88310e06-90ff-4a5b-a35d-b8dfd0e5062d" valueTypeId="e8234bd7-17b0-4181-8a56-00eed20404d9"/>
+    <managerType typeId="b00321de-f74e-456a-b3d0-1789438c57ba" valueTypeId="3d71d656-3d63-4241-92cb-a2761bf7b9cd"/>
+  </producedTypes>
+  <name>Статус</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8fe49add-b52a-468e-ad74-122106653af6">
+    <name>Выбраковка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбраковка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9d0e72b1-11ab-4154-a7c6-fe3656d09e69">
+    <name>Супоросные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Супоросные</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a77726d6-8eef-4a3d-b71c-5a154300fe6a">
+    <name>Лактирующие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лактирующие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="011ac614-60f9-4ccf-8e1a-54adb18ae601">
+    <name>ПУСТЫЕ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Холостые</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

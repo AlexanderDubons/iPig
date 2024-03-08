@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc0fb90d-4545-4d32-92e6-44efb76fb269">
+  <producedTypes>
+    <managerType typeId="31501b32-5a7e-4b7a-8f1b-5c99c415e506" valueTypeId="b38bd289-d2dd-44c0-9468-4397447a431d"/>
+    <valueManagerType typeId="a733206b-6aeb-4b98-848d-94e2902ee7ad" valueTypeId="a664aef4-6109-453d-8751-d307a11b04e0"/>
+    <valueKeyType typeId="eb855434-c2fc-4f49-829b-a882df539c2a" valueTypeId="c319ebc6-cd60-412e-bd93-646dda1abced"/>
+  </producedTypes>
+  <name>РасчетПустыхДнейДоУбоя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет пустых дней до убоя</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

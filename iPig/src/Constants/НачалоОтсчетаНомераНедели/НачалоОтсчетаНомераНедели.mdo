@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1932a43e-bfab-4e70-9f35-e5cd82ee792a">
+  <producedTypes>
+    <managerType typeId="2b7848bd-7a10-4f86-a9e6-c098fc17c139" valueTypeId="e0c4310b-5759-43b2-a023-eb96f6c0b5db"/>
+    <valueManagerType typeId="4c30beed-06b4-4855-bc30-be22d6aadf56" valueTypeId="2b40443e-1125-4fbd-98f6-75cfa90a6cfd"/>
+    <valueKeyType typeId="c3e9430e-565d-475d-958f-b05c3808b39e" valueTypeId="22ff8079-47c2-4dfa-b6dc-68b3aa232c2c"/>
+  </producedTypes>
+  <name>НачалоОтсчетаНомераНедели</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начало отсчета номера недели</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>1</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:StringValue">
+    <value>1</value>
+  </minValue>
+  <maxValue xsi:type="core:StringValue">
+    <value>7</value>
+  </maxValue>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

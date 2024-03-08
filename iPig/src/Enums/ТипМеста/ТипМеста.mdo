@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0bd7707c-c5dd-4438-927c-a6f1b5516f04">
+  <producedTypes>
+    <refType typeId="b823c6e7-6c0a-48f2-acca-280b1e8c9558" valueTypeId="c1c5c26b-cd9f-48c4-ab57-21122f1ba2b2"/>
+    <listType typeId="bcca0162-3ac3-46b5-b4ad-3aec0b5945bf" valueTypeId="67096c5d-05d4-46e7-8c59-efbbe8328ae7"/>
+    <managerType typeId="230cd3c5-2bb9-4d4f-afaf-d551ff6642de" valueTypeId="e28f2f4d-dd0f-4b94-a3ae-673ec4d80e59"/>
+  </producedTypes>
+  <name>ТипМеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип места</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a48188cf-de85-45c9-a160-0bdd1afaf0dc">
+    <name>Здание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Здание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7b58269e-6ce1-48b3-b050-47172c724c01">
+    <name>Площадка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Площадка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3d341fe0-4125-44bd-85b6-787537905967">
+    <name>Станок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станок</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cdb08737-67e7-415d-a044-d0f31c5ac285">
+    <name>Секция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Секция</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

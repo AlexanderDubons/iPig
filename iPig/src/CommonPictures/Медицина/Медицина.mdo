@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68a19c4e-ff4e-428d-ae9e-d2e7629ab365">
+  <name>Медицина</name>
+  <synonym>
+    <key>ru</key>
+    <value>Медицина</value>
+  </synonym>
+</mdclass:CommonPicture>

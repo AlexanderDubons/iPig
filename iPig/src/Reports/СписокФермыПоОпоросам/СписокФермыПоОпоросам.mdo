@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0ef5926-541e-4d79-80ec-686f0c9a54ad">
+  <producedTypes>
+    <objectType typeId="0c8e23f6-36f8-4232-8739-6e37f7a2dc9c" valueTypeId="bd60d6a2-4fde-41cb-91b7-a1212ee57cbe"/>
+    <managerType typeId="7ab7400c-d509-4682-8563-fcf6bc9f2e5c" valueTypeId="25ce6fcd-2918-4d07-a9f1-23184f4f5c2f"/>
+  </producedTypes>
+  <name>СписокФермыПоОпоросам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список фермы по опоросам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СписокФермыПоОпоросам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="d1d0a87e-b8cb-4a96-821a-6037954ec9ae">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="db8aa461-b519-4457-a492-0b06339f0798">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="221d6bda-5fb6-4477-a864-d0571a0c1613">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="f0b7e7d9-b12e-48e4-8c21-877b76a8e9d8">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

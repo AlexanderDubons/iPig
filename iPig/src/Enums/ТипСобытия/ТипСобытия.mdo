@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d64a4e7a-0ed5-47dc-8ac6-2d85384d4754">
+  <producedTypes>
+    <refType typeId="35609969-8f8b-49c5-9aec-2863d9f986c4" valueTypeId="8e7a918c-45cd-4385-b86c-afc3b53983ed"/>
+    <listType typeId="c6eaf039-372d-4320-bdc9-6a63b5c038d8" valueTypeId="8c937dd9-0c66-44ae-8d28-0ee8e7e4bae1"/>
+    <managerType typeId="3ff91da3-be1b-4894-b107-b8e0967e5680" valueTypeId="5b53fc7c-5f10-4f28-8e0e-531dc1efe1b7"/>
+  </producedTypes>
+  <name>ТипСобытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип события</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="41deeb34-c71f-4d7f-9694-3bc86cec172e">
+    <name>Случка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Случка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="01785017-a69b-40bf-81e1-a9e7023bbcc5">
+    <name>Опорос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Опорос</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

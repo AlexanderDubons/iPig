@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59a5e6e5-ef56-4ba1-ae31-50bf559a0942">
+  <producedTypes>
+    <objectType typeId="f169c977-2c18-4237-af13-e7985e8aeb11" valueTypeId="0ae3226b-039e-48de-bf28-3a415230756f"/>
+    <managerType typeId="ecdd6ceb-2e87-4f05-9877-f0169080ff9b" valueTypeId="af85334e-72d7-4d7e-b87e-e8d1152587f0"/>
+  </producedTypes>
+  <name>ПозНегОтчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поз-нег отчет</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Report>

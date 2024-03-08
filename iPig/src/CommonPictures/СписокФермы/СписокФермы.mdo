@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8bcb8b90-548c-4000-8bc3-11df62332ef6">
+  <name>СписокФермы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список фермы</value>
+  </synonym>
+</mdclass:CommonPicture>

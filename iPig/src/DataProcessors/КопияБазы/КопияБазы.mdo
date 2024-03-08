@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="009795f7-00d9-49f2-96a5-6c62439ffe66">
+  <producedTypes>
+    <objectType typeId="71804311-34b1-4bb7-81c3-0bd6bc13e41f" valueTypeId="5abf6643-4379-4641-ab18-b89b61f70364"/>
+    <managerType typeId="e8b136a3-db0f-4050-a55c-51ec3b256d83" valueTypeId="23b18863-dbaa-4371-995d-13ad51399a14"/>
+  </producedTypes>
+  <name>КопияБазы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Копия базы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КопияБазы.Form.Форма</defaultForm>
+  <attributes uuid="5237857d-f0cb-478f-b1fd-39298e73be75">
+    <name>ПутьСохранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь сохранения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="47593a93-e9d7-4ff9-9caa-804cfb9ffe64">
+    <name>ПутьЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь загрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cf9c7827-31e1-449f-b01f-911a08616f3c">
+    <name>ФайлЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл загрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="cb442f91-5692-4f3e-aa88-f851d38c218f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

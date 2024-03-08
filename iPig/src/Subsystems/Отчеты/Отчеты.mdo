@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="89364d50-e1fc-4b83-84ae-6f84f8bc66aa">
+  <name>Отчеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.КартинкаОтчет</picture>
+  </picture>
+  <content>Report.ПозНегОтчет</content>
+  <content>Report.ЧисленностьСвиней</content>
+  <content>Report.СписокПроверки</content>
+  <content>Report.СписокФермыПоОпоросам</content>
+  <content>Report.ОписьХряков</content>
+  <content>Report.КартаПлодовитости</content>
+  <content>Report.РегистрацияОпоросов</content>
+  <content>Report.СписокФермы</content>
+  <content>Report.АнализСтада</content>
+  <content>DataProcessor.КарточкаГруппы</content>
+  <content>Report.АнализСтадаПоПородам</content>
+  <content>Report.ГрафикОсновныхСобытийФермы</content>
+  <content>Report.СтатистикаВыбраковки</content>
+  <content>Report.ВозрастПриПервойСлучке</content>
+</mdclass:Subsystem>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f3587b6-95e8-46bb-a2a4-946cffeee645">
+  <producedTypes>
+    <objectType typeId="9478e1e5-a26f-452b-8c33-1ce683d309d9" valueTypeId="b5e685cf-0623-4cf1-81c6-d4e113eae127"/>
+    <managerType typeId="e142708f-bdf2-463d-83e2-8f2371c48d0f" valueTypeId="f558fdde-95e3-4334-9600-2b125d6b106c"/>
+  </producedTypes>
+  <name>АнализСтада</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ стада</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АнализСтада.Form.ФормаОтчета</defaultForm>
+  <forms uuid="485ec293-b573-4346-a7f3-e5f4c6d6b472">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2ab7790b-c91a-4aa8-8b3d-d6a24e240f95">
+    <name>АнализСтада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ стада</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

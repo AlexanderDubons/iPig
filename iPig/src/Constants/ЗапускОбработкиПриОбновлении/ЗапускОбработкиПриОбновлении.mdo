@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55564649-1ff4-4ecd-83c6-da9130063d1f">
+  <producedTypes>
+    <managerType typeId="2092c52b-fe70-4d18-a785-dfbeee8c4428" valueTypeId="25b83749-9122-4940-a58d-227ebfd614c1"/>
+    <valueManagerType typeId="aec24d99-86f5-4b43-a611-ba5f5f7fda33" valueTypeId="7e3da2ff-412e-4453-9ad7-c840e86bffe6"/>
+    <valueKeyType typeId="8ff7445a-c6ae-4c84-879f-c4642501baf9" valueTypeId="5640a827-d097-43ab-a481-6aa4d440eaa8"/>
+  </producedTypes>
+  <name>ЗапускОбработкиПриОбновлении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запуск обработки при обновлении</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

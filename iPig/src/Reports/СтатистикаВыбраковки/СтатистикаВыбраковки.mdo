@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51d217bd-a73d-4f08-9621-301539b7301d">
+  <producedTypes>
+    <objectType typeId="41074523-f1bc-469c-8970-0d7d5f8c91aa" valueTypeId="cf6b11ff-e88f-48fe-8cfa-5dfdc363aff3"/>
+    <managerType typeId="2a7777d8-105e-421a-83af-250f421b6693" valueTypeId="5d8a980c-6be8-4949-ac5a-33e98449cacd"/>
+  </producedTypes>
+  <name>СтатистикаВыбраковки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика выбраковки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СтатистикаВыбраковки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="b4589ede-e679-4992-a603-8f854f26975f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

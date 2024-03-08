@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da33b8b7-e27b-4aa6-9ba4-6bd41aa7b195">
+  <producedTypes>
+    <managerType typeId="99822505-54df-4ad7-8455-5cfb50a571a6" valueTypeId="92aac489-93f4-41ff-bc93-7a5d77053fd6"/>
+    <valueManagerType typeId="7730ec5f-6222-459e-879f-082274ebf19a" valueTypeId="8b806bac-88b2-4f10-9907-e0b527c4aac5"/>
+    <valueKeyType typeId="67ab06d7-3f6f-48af-9880-4ca0aad3f8ae" valueTypeId="46f2b4d1-cdee-4527-92a2-309992aee568"/>
+  </producedTypes>
+  <name>РезультатКопии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результат копии</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>1</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

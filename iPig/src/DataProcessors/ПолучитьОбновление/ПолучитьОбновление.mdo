@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5a27a2b-3ae2-4285-a9c2-feeb00d705a2">
+  <producedTypes>
+    <objectType typeId="f98ad901-ffb3-497e-9707-97ff5dbd6954" valueTypeId="274e1346-d791-4f83-aac5-49e3d8074e17"/>
+    <managerType typeId="384372a4-c2f0-4c55-9edc-bc7852e62de4" valueTypeId="d7519838-bb47-4697-9203-6e6719215e3f"/>
+  </producedTypes>
+  <name>ПолучитьОбновление</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получить обновление</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПолучитьОбновление.Form.ФормаОбновлениеПрограммы</defaultForm>
+  <forms uuid="4b21fe54-50c9-4e3e-8348-7756407719cf">
+    <name>ФормаОбновлениеПрограммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновление программы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

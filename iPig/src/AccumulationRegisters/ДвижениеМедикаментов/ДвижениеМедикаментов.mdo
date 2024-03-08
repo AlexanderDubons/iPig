@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0001233d-bfa1-4e08-8a16-aec1006e6726">
+  <producedTypes>
+    <selectionType typeId="4534710a-d44e-49be-819e-76e19a88a389" valueTypeId="98215750-8295-4c84-8bb6-a3185082ca8d"/>
+    <listType typeId="a0eedb66-c8ad-4f67-b84a-0d2caf247f9f" valueTypeId="d03cde05-adbc-439b-8aa0-2abee8a01dfd"/>
+    <managerType typeId="70414e35-54b3-489e-a39b-d6698b6f9afc" valueTypeId="5f78261e-af33-448b-8a9e-52776c100240"/>
+    <recordSetType typeId="d966b777-6e62-44a3-9c8c-12d0ef0fcf5b" valueTypeId="2af8fe62-010c-4bb5-84d9-0cdf5df37192"/>
+    <recordKeyType typeId="082f6560-d9fa-4a05-9315-2fb7ae2bf916" valueTypeId="c3d04798-dc1b-448d-bcc9-877b043ec230"/>
+    <recordType typeId="e734fd5a-35bb-44c6-a05e-3ae528ac487d" valueTypeId="77a3fb1b-c358-4216-8b2b-8d9eee2e0f73"/>
+  </producedTypes>
+  <name>ДвижениеМедикаментов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движение медикаментов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="7f91132b-c74a-4bfa-bff4-a205d1ea1afa">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="6384d997-a2c9-4029-a75d-943cd4ebba7c">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="d94a7dab-d5ad-495c-8f3a-44e581a3e42c">
+    <name>Медикаменты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медикаменты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Медикаменты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="90c5d120-a37e-4b15-b5d5-3cb25f980a0b">
+    <name>СрокГодности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок годности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ec096708-5734-4dc5-afac-8211e5b4454d">
+    <name>РегистрационныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f640f7e5-5cc1-481c-bad7-ef532056ad3b">
+    <name>СерияПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия поставки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="013553c3-0cf2-4221-8f70-9713ea12a382">
+  <producedTypes>
+    <objectType typeId="30bdfed3-3d7c-4f03-b7ca-6ecb090026bd" valueTypeId="4bee404a-f71a-45c3-be82-d05b953e8d2d"/>
+    <managerType typeId="2d2b366b-6c83-4268-b77c-35affafea059" valueTypeId="77c28b44-7d8b-4b63-95ba-75ca0fc11a52"/>
+  </producedTypes>
+  <name>ГрафикОсновныхСобытийФермы</name>
+  <synonym>
+    <key>ru</key>
+    <value>График основных событий фермы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ГрафикОсновныхСобытийФермы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="11e85a91-d108-4248-825e-1d8a408b58b8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd71253f-eec8-417d-95a2-e6729da83a48">
+  <producedTypes>
+    <selectionType typeId="aa96609a-6f35-4ead-9aa5-28266c1e2e83" valueTypeId="f97a26c0-9eba-4ae5-8237-79e415ecc9cf"/>
+    <listType typeId="5ce8f8a8-8657-4656-b847-f4195c92cb8f" valueTypeId="fe675980-d81f-4a86-87c3-aff431dbbc35"/>
+    <managerType typeId="6efa0aaa-ec70-4ffb-8c27-c597de1c3b6e" valueTypeId="981b4a90-13ad-4206-adf8-2d06e2c47c6d"/>
+    <recordSetType typeId="62f3ba5b-c309-4b95-a864-d6cd8bff1de5" valueTypeId="80275b9c-192a-465f-9d62-785967b16397"/>
+    <recordKeyType typeId="ffbb1c17-53a2-4e11-8a31-00379aadbc49" valueTypeId="9bcc8bd6-cb25-46b2-86ea-36a7984523b0"/>
+    <recordType typeId="1ae1897c-6202-4dfd-92ac-f50eaa3fc494" valueTypeId="f448f25c-b64e-4c2f-a782-dc4e8948bf47"/>
+    <recordManagerType typeId="7dc5465b-7ab0-43dd-8bea-899a4fdff00c" valueTypeId="c51dd1df-5b6f-4667-a6cd-215b3a9fe095"/>
+  </producedTypes>
+  <name>ДополнителнаяРегистрация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнителная регистрация</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ДополнителнаяРегистрация.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ДополнителнаяРегистрация.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="729498af-361b-4b03-9a0e-d1c5161806e0">
+    <name>НомерЖивотного</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер животного</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НомерЖивотного</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0ef4c808-1f4a-4886-9f4c-7c6c6405e826">
+    <name>ДатаВвода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ввода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="abc19ca2-16b3-40ff-bda9-4fc0d57a2cad">
+    <name>Название</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Причины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1c1e773a-e772-4c30-92c4-6df4c6a21d4b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="83577d05-5da3-4fe9-ab54-181590199a71">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

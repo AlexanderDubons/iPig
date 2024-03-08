@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодПороды</dataPath>
+			<field>КодПороды</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Шрифт</dcscor:parameter>
+					<dcscor:value xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерОпороса</dataPath>
+			<field>НомерОпороса</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Шрифт</dcscor:parameter>
+					<dcscor:value xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерОпоросаКоличество</dataPath>
+			<field>НомерОпоросаКоличество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер опороса количество</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Шрифт</dcscor:parameter>
+					<dcscor:value xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	КарточкаСвиноматки.КодПороды КАК КодПороды,
+	ВЫБОР
+		КОГДА КарточкаСвиноматки.НомерОпороса = 0
+			ТОГДА "Неосемененные"
+		ИНАЧЕ ВЫБОР
+				КОГДА КарточкаСвиноматки.НомерОпороса &gt; 0
+						И ЖурналОпороса.Период ЕСТЬ NULL
+					ТОГДА КарточкаСвиноматки.НомерОпороса - 1
+				ИНАЧЕ КарточкаСвиноматки.НомерОпороса
+			КОНЕЦ
+	КОНЕЦ КАК НомерОпороса,
+	ВЫБОР
+		КОГДА КарточкаСвиноматки.НомерОпороса = 0
+			ТОГДА "Неосемененные"
+		ИНАЧЕ ВЫБОР
+				КОГДА КарточкаСвиноматки.НомерОпороса &gt; 0
+						И ЖурналОпороса.Период ЕСТЬ NULL
+					ТОГДА КарточкаСвиноматки.НомерОпороса - 1
+				ИНАЧЕ КарточкаСвиноматки.НомерОпороса
+			КОНЕЦ
+	КОНЕЦ КАК НомерОпоросаКоличество,
+	МАКСИМУМ(ЖурналОсеменения.Период) КАК ДатаОсеменения,
+	МАКСИМУМ(ЖурналОпороса.Период) КАК ДатаОпороса
+ПОМЕСТИТЬ ВТДанные
+ИЗ
+	РегистрСведений.КарточкаСвиноматки КАК КарточкаСвиноматки
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЖурналОсеменения КАК ЖурналОсеменения
+		ПО КарточкаСвиноматки.Период = ЖурналОсеменения.ДатаВвода
+			И (ЖурналОсеменения.НомерЖивотного = КарточкаСвиноматки.НомерЖивотного)
+			И (ЖурналОсеменения.НомерОпороса = КарточкаСвиноматки.НомерОпороса)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЖурналОпороса КАК ЖурналОпороса
+		ПО КарточкаСвиноматки.Период = ЖурналОпороса.ДатаВвода
+			И (ЖурналОпороса.НомерЖивотного = КарточкаСвиноматки.НомерЖивотного)
+			И (ЖурналОпороса.НомерОпороса = КарточкаСвиноматки.НомерОпороса)
+ГДЕ
+	КарточкаСвиноматки.ДатаВыбытие = ДАТАВРЕМЯ(1, 1, 1)
+
+СГРУППИРОВАТЬ ПО
+	КарточкаСвиноматки.НомерЖивотного,
+	КарточкаСвиноматки.КодПороды,
+	КарточкаСвиноматки.НомерОпороса,
+	ВЫБОР
+		КОГДА КарточкаСвиноматки.НомерОпороса = 0
+			ТОГДА "Неосемененные"
+		ИНАЧЕ ВЫБОР
+				КОГДА КарточкаСвиноматки.НомерОпороса &gt; 0
+						И ЖурналОпороса.Период ЕСТЬ NULL
+					ТОГДА КарточкаСвиноматки.НомерОпороса - 1
+				ИНАЧЕ КарточкаСвиноматки.НомерОпороса
+			КОНЕЦ
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА КарточкаСвиноматки.НомерОпороса = 0
+			ТОГДА "Неосемененные"
+		ИНАЧЕ ВЫБОР
+				КОГДА КарточкаСвиноматки.НомерОпороса &gt; 0
+						И ЖурналОпороса.Период ЕСТЬ NULL
+					ТОГДА КарточкаСвиноматки.НомерОпороса - 1
+				ИНАЧЕ КарточкаСвиноматки.НомерОпороса
+			КОНЕЦ
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТДанные.КодПороды КАК КодПороды,
+	ВЫБОР
+		КОГДА ВТДанные.НомерОпороса = 0
+			ТОГДА "Свинки"
+		ИНАЧЕ ВТДанные.НомерОпороса
+	КОНЕЦ КАК НомерОпороса,
+	КОЛИЧЕСТВО(ВЫБОР
+			КОГДА ВТДанные.НомерОпороса = 0
+				ТОГДА "Свинки"
+			ИНАЧЕ ВТДанные.НомерОпороса
+		КОНЕЦ) КАК НомерОпоросаКоличество
+ИЗ
+	ВТДанные КАК ВТДанные
+
+СГРУППИРОВАТЬ ПО
+	ВТДанные.КодПороды,
+	ВЫБОР
+		КОГДА ВТДанные.НомерОпороса = 0
+			ТОГДА "Свинки"
+		ИНАЧЕ ВТДанные.НомерОпороса
+	КОНЕЦ</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>Процент</dataPath>
+		<expression>ОКР(Сумма(НомерОпоросаКоличество) / Вычислить("Сумма(НомерОпоросаКоличество)", "ОбщийИтог") *100,2)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Процент</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>НомерОпоросаКоличество</dataPath>
+		<expression>Сумма(НомерОпоросаКоличество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Процент</dataPath>
+		<expression>Процент</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерОпороса</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Опорос</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КодПороды</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порода</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерОпоросаКоличество</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол.</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Процент</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>%</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НомерОпороса</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список фермы по опоросам</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>КодПороды</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НомерОпороса</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

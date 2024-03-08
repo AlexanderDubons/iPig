@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5c417a5-f75a-4b5a-99c1-311c5ffecc74">
+  <producedTypes>
+    <selectionType typeId="db8889ee-ba12-4fa4-bb1d-20744f784fd5" valueTypeId="b2710ef6-ac6c-4fe2-a401-b5843285e006"/>
+    <listType typeId="37cbacef-5292-4113-89ad-018ec6c9d735" valueTypeId="45a4b1e9-1ca2-4b7c-8e87-dc65806fcc7f"/>
+    <managerType typeId="5091d598-f846-4606-9207-547c343c3601" valueTypeId="01787380-da14-4818-a071-6a37f587d0f7"/>
+    <recordSetType typeId="e81ea1ab-bf8d-4506-970a-2c64ac9b6dbe" valueTypeId="b3897ec9-086d-4d60-a5da-760780ff3564"/>
+    <recordKeyType typeId="8bf76eec-8ac6-42e2-8d42-9b501d0d18ad" valueTypeId="66a5ace7-3235-4089-bc15-b5641e9c30d9"/>
+    <recordType typeId="f27c9346-d125-43b9-b641-18841ef9283c" valueTypeId="9a582496-55b9-4739-85c4-585de34eda57"/>
+    <recordManagerType typeId="42c10396-481c-45c7-9b0c-a32a00acc3df" valueTypeId="71f82054-d7ae-4640-98fc-2d0220e98aab"/>
+  </producedTypes>
+  <name>ПородаDGid</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порода DGid</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="7f5c8a4e-b7bf-4977-806a-4fc6eb183644">
+    <name>Порода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порода</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Порода</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f3cb79d6-e8b4-416f-9d13-f3919d316a06">
+    <name>БуквенныйКод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Буквенный код</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1be4f644-514a-4037-828e-b0f1300b5279">
+    <name>ЧисловойКод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Числовой код</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

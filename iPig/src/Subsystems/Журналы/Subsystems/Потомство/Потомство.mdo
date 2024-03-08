@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a396f50d-8d0f-4cd1-908d-05124c194961">
+  <name>Потомство</name>
+  <synonym>
+    <key>ru</key>
+    <value>Потомство</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ВводПотомства</content>
+  <content>InformationRegister.ПереводПотомства</content>
+  <content>InformationRegister.ПадежПотомства</content>
+  <parentSubsystem>Subsystem.Журналы</parentSubsystem>
+</mdclass:Subsystem>

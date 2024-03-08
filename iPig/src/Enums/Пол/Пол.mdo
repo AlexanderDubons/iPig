@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a790bc90-7b66-42e7-9113-bf4a8a733962">
+  <producedTypes>
+    <refType typeId="0d346bfe-65d6-4529-8093-d088951be137" valueTypeId="cb826ee7-9092-4011-a53e-f76b0864fdee"/>
+    <listType typeId="2e886c0a-4644-400b-a85f-90abd6e845a5" valueTypeId="4bff3809-87db-471a-a58f-cbfed1b3595f"/>
+    <managerType typeId="17ce3c60-8557-43bd-b171-6bfb1ea06c3e" valueTypeId="b1762057-7c17-45e7-bd49-84770406327c"/>
+  </producedTypes>
+  <name>Пол</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пол</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9d817d23-9f16-4e4c-b4dd-5a8d0016390f">
+    <name>Хряк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хряк</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dff3e9a5-79fd-4af4-bc09-e650b5278795">
+    <name>Свинка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свинка</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
